@@ -46,7 +46,7 @@
 
     <p>The first line of error says, <pre>Something went wrong while attempting to connect to the network. Check your network configuration.</pre> First, we want to strip out generic terms. This will help narrow the search. Let's remove <pre>Something went wrong while</pre> which leaves us with <pre>attempting to connect to the network. Check your network configuration.</pre> Let's stick with the last sentence <pre>Check your network configuration</pre>, as it's something we're being asked to check.</p>
 
-    <p>Second, we're going to want to add to our search whatever piece of software or library we're using, to further specify our problem. So our search is <pre>Truffle check your network configuration</pre>.</p> Here's my results page:
+    <p>Second, we're going to want to add to our search whatever piece of software or library we're using, to further specify our problem. So our search is <code>Truffle check your network  configuration</code>.</p> Here's my results page:
 
     <img src="../../img/truffle-error-2.png" alt="First page of search results for 'truffle check your network configuration'">
 
@@ -72,8 +72,68 @@
 
     <h3>How to Ask Someone For Help</h3>
 
-    --context is important
-    --find a good list of context (nich's list)
+    <p>The first thing to know about how to ask someone for help is <i>when</i> to ask someone for help. If you're totally lost, absolutely reach out for help. However, you should take some time and basic effort of deducing the problem on your own before coming to someone else for help. We do this for two reasons: First, you want to be respectful of people's time. You should follow the steps above to search around on the internet, then you can let the person know what you've found. Second, if you haven't done the basic Googling, that's exactly what the person you're reaching out to is going to do. Many people believe mentors or instructors wouldn't stoop to use a search engine but, spoiler alert, it's one of the most powerful tools. So rather than feeling dependent on someone else to do something well within your capacity, you should empower yourself to do the basic sleuthing first.</p>
+
+    <h4>Context</h4>
+    <p>This cannot be stressed enough: <b>Context is an absolute, ultimate, don't-even-ask-unless-you-have-it requirement for asking a question.</b> Since we are all virtual, no one can see your setup or be able to look at your computer themselves. As a result, we don't know what led you to have your problem. Also, people in different timezones might have an answer but won't be able to ask if you're already offline.</p>
+    
+    <p>Since context is so important, we've provided a template that you <b>MUST</b> use when you are asking a question in the course. Seriously, we're going to make you fill this out if you don't use this template! We'll explain why after we go through it.</p>
+
+    <h5>Template for Questions</h5>
+    <ul>
+      <li>My question is: 
+        <ul>
+          <li>Related to something technical I'm struggling with</li>
+          <li>A concept I don't understand</li>
+          <li>A question about logistics in the course (quizzes, grading, final project submission)</li>
+        </ul>
+
+      </li>
+      <p>For technical questions:</p>
+        <ul>
+          <li>What is your computer environment:
+            <ul>
+              <li>What OS version are you running? (Name and release version, i.e. MacOS Big Sur, Ubuntu 20.04)</li>
+              <li>If you're asking a question about a specific piece of software or library, what version are you running? Typically, in desktop software, this is found in the "File > About" dropdown menu or, for command line software, by running <code>[PROGRAM-NAME] --version</code> or <code>[PROGRAM-NAME] -v</code></li>
+              <li>If you're using npm, what version are you running? use <code>npm -v</code> to find out.</li>
+            </ul>
+          </li>
+          <li>What is your issue:
+            <ul>
+              <li>Describe your problem in general terms.</li>
+              <li>What did you expect to happen?</li>
+              <li>What actually happened? Please give examples and provide screenshots of the error. Please copy the error message and provide it when asking the question. </li>
+              <li>Please provide the shortest amount of steps to reproduce your issue.</li>
+            </ul>
+          </li>
+          <li>Steps already taken:
+            <ul>
+              <li>What have you tried already?</li>
+              <li>Any promising Google or Stack Overflow results?</li>
+              <li>What do you think the problem might be?</li>
+            </ul>
+          </li>
+        </ul>
+      <p>For questions about concepts you don't understand:</p>
+        <ul>
+          <li>What is the concept you have a question about? Is it in the course, if so, which module or lesson?</li>
+          <li>What about this concept <b>do</b> you understand? Are there concepts related to it that you do understand?</li>
+          <li>What about this concept <b>don't</b> you understand?</li>
+          <li>Using specific keywords, have you searched online or in the Discord chat?</li>
+          <li>Please link to any relevant documents. If you're asking about something not in the course, please provide a link related to the concept.</li>
+        </ul>
+      <p>For questions about logistics in the course:</p>  
+        <ul>
+          <li>What module / lesson are you having trouble with?</li>
+          <li>Describe your problem in general terms.</li>
+          <li>What did you expect to happen?</li>
+          <li>What actually happened?</li>
+          <li>What have you tried already?</li>
+          <li>What do you think the problem might be?</li>
+        </ul>
+    </ul>
+
+    <p>While it may seem burdensome to fill out this template, it ensures two things. First, it helps you understand the nature of the problem you're asking about. Sometimes doing that can help us solve our own problems. Second, it provides the valuable context we mentioned above. This increases our chances of finding an answer as it reduces the amount of time and effort needed to understand the basics of the situation. And it provides an asynchronous way of someone else understanding your problem so they can still try to help even if you're not online.</p>
 
   <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
