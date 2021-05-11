@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Command Line</title>
+</head>
+<div class="body">
+  
+  <!-- Title goes below: -->
+  <h1>What is the Command Line Interface (CLI)?</h1>
+  
+  <!-- Content here: -->
+
+    <p>The <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer">command line interface (CLI)</a> is the basic non-graphic interface for your computer. It is sometimes also called the terminal, the shell, or the bash client. In this section, we'll go over some basic concepts and go over basic commands. We'll also include at the bottom some resources where you can learn more.</p>
+ 
+  <h2>Everything is a File</h2>
+
+    <p>An overarching philosophy with command line clients is the concept that <i>Everything is a File.</i> This means that every item you see on the command line interface or terminal is a file that can either be written to (changed) or read. Take a look at the image below:</p>
+
+    <img src="../../img/terminal-file-1.png" alt="A screenshot of a terminal screen showing files">
+
+    <p>This is a terminal showing the contents of the current user's <b>directory</b> (also known as a folder) using a common command <code>ls</code>. This is the user's "Home" folder and, even though these are more folders, the command line simply sees them as files. We can read these files, or we could write to / change these files (by adding more documents or changing their name, for example).</p>
+
+    <p>No matter what kind of file the folder holds, the command line will simply understand it as a file. This is a form of <i>abstraction</i> which allows the command line to generalize computation in a powerful way. This concept of command line abstraction is extremely important and you can read more about it in this e-book <a href="https://www.bottomupcs.com/chapter00.xhtml" target="_blank" rel="noopener noreferrer">here.</a></p>
+
+  <h2>Command Line Syntax</h2>
+    <p><i>In this section, we'll be borrowing heavily from <a href="https://help.ubuntu.com/community/CommandlineHowto" target="_blank" rel="noopener noreferrer">the Ubuntu Help website.</a></i></p>
+
+    <h3>The Prompt</h3>
+      <p>The prompt shows that you've properly loaded your command line and it's ready to receive instructions. While it looks different on different computers, it is generally portrayed using the structure:</p>
+
+      <pre>USERNAME@COMPUTER_NAME:~ $</pre>
+
+      <p>So if you're name was Jaime and you were on a Ubuntu machine, your prompt would look like:</p>
+
+      <pre>Jaime@ubuntu:~ $ </pre>
+
+      <p>Most important here is the dollar sign <code>$</code> which represents the command line. In tutorials, you may see code that starts with the <code>$</code>. This means that you should copy everything <b>after</b> the <code>$</code> but do not include the <code>$</code>. It is only meant to signify the code given should be executed on the command line.</p>
+
+  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <div class="footer">
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L2/index.html" target="_blank">Edit this page on Github</a>
+      
+      <div class="discord">
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
+      </div> 
+    </div>
+</div>
+
+</html>
