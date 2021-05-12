@@ -1,0 +1,2 @@
+--differences and similarities between MacOS and Linux command line (be sure people know if they're on a machine how similar / different it is)
+--install Linux on Windows -- q: Is it impossible to have Linux on Windows?

@@ -15,7 +15,7 @@
   
   <!-- Content here: -->
 
-    <p>The <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer">command line interface (CLI)</a> is the basic non-graphic interface for your computer. It is sometimes also called the terminal, the shell, or the bash client. In this section, we'll go over some basic concepts and go over basic commands. We'll also include at the bottom some resources where you can learn more.</p>
+    <p>The <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank" rel="noopener noreferrer">command line interface (CLI)</a> is the basic non-graphic interface for your computer. It is sometimes also called the terminal, the shell, or the bash client. In this section, we'll go over some basic concepts.</p>
  
   <h2>Everything is a File</h2>
 
@@ -30,6 +30,8 @@
   <h2>Command Line Syntax</h2>
     <p><i>In this section, we'll be borrowing heavily from <a href="https://help.ubuntu.com/community/CommandlineHowto" target="_blank" rel="noopener noreferrer">the Ubuntu Help website.</a></i></p>
 
+    <p>Please follow along with these examples in your own terminal!</p>
+
     <h3>The Prompt</h3>
       <p>The prompt shows that you've properly loaded your command line and it's ready to receive instructions. While it looks different on different computers, it is generally portrayed using the structure:</p>
 
@@ -40,6 +42,108 @@
       <pre>Jaime@ubuntu:~ $ </pre>
 
       <p>Most important here is the dollar sign <code>$</code> which represents the command line. In tutorials, you may see code that starts with the <code>$</code>. This means that you should copy everything <b>after</b> the <code>$</code> but do not include the <code>$</code>. It is only meant to signify the code given should be executed on the command line.</p>
+
+    <h3>Single Command</h3>
+      <p>The most simple command possible on the terminal is the single command. To execute a single command on the terminal, simply type the command and press enter: </p>
+
+      <pre>$ COMMAND</pre>
+
+      <p>We've already seen one example of this, the <code>ls</code> command, which lists all the files in the current directory. Here's another example:</p>
+
+      <pre>$ pwd</pre>
+
+      <p>This command lists the <b>p</b>resent <b>w</b>orking <b>d</b>irectory, or your current location in the computer, also known as your <b>path</b>. See the example below:</p>
+
+      <img src="../../img/terminal-file-2.png" alt="A screenshot of the command pwd">
+
+      <p>Another form of the single command is this format:</p>
+
+      <pre>$ COMMAND <ARGUMENT></pre>
+
+      <p>In this syntax, <code>COMMAND</code> operates on the <code>ARGUMENT</code>. See the examples below:</p>
+      
+      <pre>
+        user@ubuntu:~ $ echo "Hello World!"
+        "Hello World!"
+      </pre>
+
+      The command <code>echo</code> prints the argument <code>"Hello World"</code> to the command line output.
+
+      <pre>
+        user@ubuntu:~ $ cat file1.txt
+        These are the contents
+        Of our test file
+        Printed on the command line  
+      </pre>
+
+      <p>The command <code>cat</code> prints the contents of the argument <code>file1.txt</code> to the command line output.</p>
+      
+      <p>Here is another common format for command line code:</p>
+
+      <pre>$ command -option</pre>
+
+      <code>-option</code> is a variable we pass to <code>command</code> to alter its behavior. For example, if we run:
+
+      <pre>user@ubuntu:~ $ ls -a</pre>
+
+      <p>This will show <b>a</b>ll the files, including those that are hidden. Compare this terminal screen to the previous <code>ls</code> example above or try it on your own terminal!</p>
+
+      <img src="../../img/terminal-file-3.png" alt="screenshot of the command ls -a">
+
+      <p>When <code>option</code> is used in conjunction with running a program from the command line, we call it a <b>flag</b>. 
+        
+      A common one you'll see in the course is <code>-v</code> or <code>--version</code>, which tells us what version of the program we are running (note the difference in the number of dashes):</p>
+
+      <pre>
+        user@ubuntu:~ $ node -v 
+        v15.11.0
+      </pre>
+
+      <p>When we're troubleshooting issues, this is extremely helpful to know what version of a program we're running.</p>
+
+      <p>It's possible to run a command with five, ten or more <b>flags</b>. When we're working with Ethereum software clients, such as <a href="https://geth.ethereum.org/" target="_blank" rel="noopener noreferrer">Geth</a> or <a href="https://besu.hyperledger.org/en/stable/" target="_blank" rel="noopener noreferrer">Hyperledger Besu,</a> you will see they sometimes have many flags!</p>
+
+    <h3>Multiple Commands</h3>
+
+      <p>We can also run multiple commands in the same terminal line. We do this by the use of <a href="https://en.wikipedia.org/wiki/Operator_(computer_programming)" target="_blank" rel="noopener noreferrer">operators</a> such as <code>&&</code>. The format for running multiple commands is:</p>
+
+      <pre>$ command1 && command2</pre>
+
+      <p>A common way this is used is tying together the <code>mkdir</code> (which makes a directory or folder) and <code>cd</code> (which navigates into a directory or folder) commands. See the example below:</p>
+
+      <pre>user@ubuntu:~ $ mkdir test-folder && cd test-folder</pre>
+
+      <p>The order of the commands is extremely important -- we cannot run <code>cd</code> before <code>mkdir</code> in the example above.</p>
+
+    <h3>Control Flow</h3>
+    
+      <p>One more command line syntax structure before we get to common commands, control flow. This is the ability to redirect the input or output of a command.</p>
+
+      <p>One example of this is the <code>></code> operator, which redirects the output of a command as an argument to the second command. A common way that is used is the following:</p>
+
+      <pre>
+        user@ubuntu:~ $ echo "I'm writing to a text file!" > file1.txt
+      </pre>
+
+      <p>Here, we're directing the output of the <code>echo</code> command (the text argument we passed in) into the file <code>file1.txt</code>. We don't have to create <code>file1.txt</code> beforehand, the command line will create it for us if it doesn't exist. Warning, if it does exist, it will <b>overwrite</b> existing content. Test to see you've successfully written to <code>file1.txt</code> by running:</p>
+
+      <pre>
+        user@ubuntu:~ $ cat file1.txt
+        I'm writing to a text file!
+      </pre>
+
+      <p>Another control flow operator which redirects content is the pipe or <code>|</code>, located typically above the backslash or <code>\</code> key. It does a similar job to <code>></code> operator but works on different commands. See the example from Ubuntu Help below:</p>
+
+      <pre>user@ubuntu:~ $ ls | sort</pre>
+
+      <p>This command lists all the files in the current directory but also sorts them by their first character. Try it on your command line to see how it works!</p>
+
+
+
+
+
+
+
 
   <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
