@@ -50,6 +50,18 @@
         <li><b>Downloading a File</b> to download a file from a specific internet address, you use <code>curl ADDRESS_OF_FILE</code> on MacOS and <code>wget ADDRESS_OF_FILE</code> on Linux. The file will download to the current directory you run the command in. If you need to move the file to another directory, use <code>mv</code></li>
         <li><b>Decompressing / Unarchiving files</b> Software may be "bundled" or compressed with <code>tar</code> or <code>zip</code> formats. Use the <code>tar</code> and <code>unzip</code> commands to decompress the files into your current directory. To learn more, type <code>man gunzip</code> or <code>man tar</code> in your terminal.</li>
       </ol>
+
+    <h2>A note on <code>sudo</code> and privileges</h2>
+    <p>In trying out some command line exercises, you may have been confronted with a message that looked something like this:</p>
+
+    <pre>You do not have sufficient privilege to perform this operation.</pre>
+
+    <p>Certain important files are protected from being read or changed by the user. However, these permissions can be changed or overridden by putting <code>sudo</code> at the beginning of your command. You must be extremely careful about using this, though, as you can accidentally commit serious damage to your computer while operating as <code>sudo</code></p>
+      
+    <p>You can learn more about privileges and sudo from <a href="https://kb.iu.edu/d/abdb" target="_blank" rel="noopener noreferrer">this website here.</a></p>
+
+    <h2>$PATH</h2>
+
   <h1>More Resources</h1>
   <p>We've just scratched surface on the command line. To learn more, please visit the links below:</p>
   <ul>
@@ -59,6 +71,7 @@
     <li><a href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/" target="_blank" rel="noopener noreferrer">Reddit: Linux Basic Commands Every User Should Know</a> Most are also applicable to MacOS</li>
     <li><a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank">MIT: Your Missing CS Semester: The Shell</a> and <a href="https://missing.csail.mit.edu/2020/shell-tools/" target="_blank">Shell Tools</a></li>
     <li><a href="https://www.theodinproject.com/courses/foundations/lessons/command-line-basics-web-development-101" target="_blank">The Odin Project: Command Line Basics</a></li>
+    <li><a href="https://kb.iu.edu/d/abdb" target="_blank" rel="noopener noreferrer">Managing File Permissions on Linux-like systems</a></li>
   </ul>
 
 
