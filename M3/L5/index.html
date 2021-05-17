@@ -30,6 +30,7 @@
       <li><b>CTRL + l</b> Clears your screen without typing <code>clear</code></li>
       <li><b>CTRL + k</b> Delete from current cursor position to end of the line</li>
       <li><b>CTRL + t (Linux) / Escape + t (Mac)</b> Will swap the two words that appear immediately before the cursor</li>
+      <li><b>CTRL + r</b> Search your previous command history, easier than using up or down arrows</li>
     </ul>
 
     <p>For more Linux shortcuts, please see <a href="https://dev.to/yashsugandh/keyboard-shortcuts-for-linux-terminal-19ml" target="_blank" rel="noopener noreferrer">this article.</a> For more Mac shortcuts, please see <a href="https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/" target="_blank" rel="noopener noreferrer">this article.</a></p>
@@ -74,7 +75,7 @@
 
     <p>For those interested, we'd recommend a two step process for developing effective aliases:
       <ol>
-        <li>Find what commands you use most frequently. There are a few ways to do this, but, if your history is long enough, the following command may work on a UNIX-like system: <code>history | awk '{print $2}' | sort | uniq -c | sort -rn | head</code> </li>
+        <li>Find what commands you use most frequently. There are a few ways to do this, but, if your history is long enough, the following command may work on a UNIX-like system: <code>history | awk '{print $2}' | sort | uniq -c | sort -rn | head</code>. Note: to make this most effective, you typically must increase your history and specify terminal to save history when exiting, otherwise you will only have the commands you've used recently. Please see the next section on <b>Shell Frameworks</b> to see how to do this.</li>
         <li>Once you've found which commands you use the most, you need to locate the correct file to create your aliases. This is typically a <code>profile</code> or a run command (<code>rc</code>) file but <i>which</i> run command file depends on your shell. If you're using <code>bash</code>, you'll want to create or edit <code>~/.bash_profile</code> or <code>~/.bashrc</code>. If you're using <code>zsh</code>, the default for MacOS 10.15 Catalina and later, you'll want to edit <code>~/.zprofile</code> or <code>~/.zshrc</code>. See <a href="https://superuser.com/questions/187639/zsh-not-hitting-profile" target="_blank" rel="noopener noreferrer">this Superuser post</a> for more information on <code>profile</code> and <code>rc</code> files.</li>
       </ol>
     </p>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Command Line</title>
+</head>
+<div class="body">
+  
+  <!-- Title goes below: -->
+  <h1>Advanced: Shell Frameworks</h1>
+  
+  <!-- Content here: -->
+
+    <p><i>This section, while open to all, is meant for advanced users. You do not need to complete this lesson if you are new to the command line.</i></p>
+
+    <p>In the previous section, we covered customization of the command line, including shortcuts and aliases. Hopefully, that showed you the potential power lying dormant in your command line and awoke a spirit of customization and optimization you'd like to pursue more. Well, you're in luck, because people have collected entire command line configuration and packaged them into <b>shell frameworks</b>.</p>
+
+    <p>Shell frameworks are typically community-driven efforts to gather some of the most helpful aliases, custom prompts and other customizations into one project the user can install. However, people install a shell framework and then choose a few customizations they find most helpful. Some users may also start on a shell framework but then revert to "vanilla" (no shell framework) <code>bash</code> or <code>zsh</code>, keeping some of their favorite aliases from the shell framework.</p>
+
+    <p>In this lesson, we're going to go over a popular shell framework, <a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">Oh-My-Zsh</a>, and a popular custom prompt, <a href="https://denysdovhan.com/spaceship-prompt/" target="_blank" rel="noopener noreferrer">Spaceship</a>. We'll then show you a few custom configurations for "vanilla" terminal setups, using real-life config files from software engineers.</p>
+
+    <p><i>Note: Oh-My-Zsh requires your terminal to be running <code>zsh</code>, which is not the native terminal language for Linux. However, you can <a href="https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/" target="_blank" rel="noopener noreferrer">install zsh for Linux.</a></i></p>
+
+    <h2>Oh-My-Zsh</h2>
+
+      <p><a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">From the Oh-My-Zsh website:</a></p>
+
+      <blockquote>
+        <i>Oh My Zsh is an open source, community-driven framework for managing your Zsh configuration. Oh My Zsh comes bundled with plugins [and themes], which allow you to take advantage of functionality of many sorts to your shell just by enabling them. </i>
+      </blockquote>
+
+      <p>You can install Oh-My-Zsh from the terminal using <code>wget</code> or <code>curl</code>. Please see install instructions from their website <a href="https://ohmyz.sh/#install" target="_blank" rel="noopener noreferrer">here</a> or use the following <code>curl</code> command: </p>
+
+      <pre>$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</pre>
+
+      <p>If you'd like to learn more about Oh-My-Zsh, you can <a href="https://github.com/ohmyzsh/ohmyzsh/wiki" target="_blank" rel="noopener noreferrer">read their documentation here.</a></p>
+
+      <p>Oh-My-Zsh plugins are sophisticated tools that improve your <code>zsh</code> experience. Here are a few popular Oh-My-Zsh plugins:</p>
+
+      <ul>
+        <li><a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump" target="_blank" rel="noopener noreferrer"><b>Autojump</b></a> "is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line." Read more about autojump from its page <a href="https://github.com/wting/autojump" target="_blank" rel="noopener noreferrer">here</a> and find out to install it from its Oh-My-Zsh plugin page <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump" target="_blank" rel="noopener noreferrer">here.</a></li>
+        <li><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener noreferrer"><b>Syntax Highlighting</b></a> is a way of differentiating commands from arguments and different variables on the command line. It's visually appealing but also helps catch errors. This plugin is not bundled with Oh-My-Zsh, but can be easily installed following <a href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o" target="_blank" rel="noopener noreferrer">these instructions.</a> Please note plugins are separated by whitespaces, not commas, when adding them to <code>/.zshrc</code></li>
+        <li><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener noreferrer"><b>Autosuggestions</b></a> "suggests commands as you type based on history and completions." See more information on their website here. This is also not bundled with Oh-My-Zsh. To install it, <a href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o" target="_blank" rel="noopener noreferrer">follow these instructions.</a> Please note plugins are separated by whitespaces, not commas, when adding them to <code>/.zshrc</code></li>
+      </ul>
+
+      <p>Oh-My-Zsh also supports roughly 150 color themes natively. See <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener noreferrer">this page</a> to find a theme you like. To choose a theme, follow these instructions from Oh-My-Zsh:</p>
+
+      <blockquote>In order to enable a theme, set <code>ZSH_THEME</code> to the name of the theme in your ~/.zshrc, before sourcing Oh My Zsh; for example: <code>ZSH_THEME=robbyrussell</code>
+        If you do not want any theme enabled, just set <code>ZSH_THEME</code> to blank or remove the line: <code>ZSH_THEME=""</code></blockquote>
+
+      <p>Again, you might find Oh-My-Zsh overkill. That's totally okay! Regardless, you may get some aliasing or customization ideas from their plugins and themes. For example, check out their <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases" target="_blank" rel="noopener noreferrer"><code>common-aliases</code> plugin.</a></p>
+
+    <h2>Spaceship</h2>
+
+      <p>From the website:</p>
+       
+      <blockquote><i>Spaceship is a minimalistic, powerful and extremely customizable Zsh prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.</i></blockquote>
+
+      <p>As you can see from the image below, Spaceship targets the <b>prompt</b> of the terminal, rather than commands put in the terminal. It provides visual cues to help with error handling, git workflow, library versions (Node, Ruby, etc.) and more.</p>
+
+      <img src="../../img/spaceship.gif" alt="screenshot animation of spaceship prompt">
+
+      <p>Note that the above screenshot is running on <a href="https://hyper.is/" target="_blank" rel="noopener noreferrer">the Hyper terminal emulator</a> with syntax highlighting and autocomplete plugins already installed. Spaceship will not look like this out of the box. Read more about <a href="https://denysdovhan.com/spaceship-prompt/docs/Troubleshooting.html#why-doesnt-my-prompt-look-like-the-preview" target="_blank" rel="noopener noreferrer">the screenshots configuration here.</a></p>
+
+      <p>Spaceship may run slow on directories that are git repositories with lots of unstaged changes. Read more about what Spaceship provides on <a href="https://denysdovhan.com/spaceship-prompt/" target="_blank" rel="noopener noreferrer">their website.</a></p>
+
+    <h2>Heavy Aliasing</h2>
+
+      <p>You may go through the documentation for Oh-My-Zsh and Spaceship and decide you'd like to "roll your own" shell framework, so to speak. You can definitely do this by setting up configurations and aliases on your own. (See the previous section about editing your terminal configuration.)</p>
+
+      <p>Here are some more simple-but-popular customizations people like to use for their terminals:</p>
+
+        <ul>
+          <li><b>Extend and Save Your Session History</b> You may try to find your most common commands and realize your history only includes the current session. For <code>bash</code>, <a href="https://apple.stackexchange.com/questions/50649/how-to-make-bash-terminal-app-remember-history-of-previous-sessions" target="_blank" rel="noopener noreferrer">use this SO answer</a> to configure your history and be sure to force a save in case following these instructions <a href="https://superuser.com/questions/20900/bash-history-loss-when-using-histappend" target="_blank" rel="noopener noreferrer">here.</a> For <code>zsh</code>, you need to add a few lines to your <code>~/.zshrc</code> file: 
+            <pre># http://zsh.sourceforge.net/Doc/Release/Options.html
+              # ignore duplicates in history
+              setopt HIST_IGNORE_DUPS
+              # ignore spaces in history
+              setopt HIST_IGNORE_SPACE
+              #append into history file
+              setopt INC_APPEND_HISTORY
+              #set history size
+              export HISTSIZE=50000
+              #save history after logout
+              export SAVEHIST=10000
+              #history file
+              export HISTFILE=~/.zhistory
+              # Add timestamp to history
+              export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "</pre>
+          </li>
+          <li>You can remove the pesky "last login" line at the top of your <code>zsh</code> sessions on MacOS by simply running <code>$ touch .hushlogin</code> and restarting your terminal.</li>
+        </ul>
+
+      <p>There are so many more options for customizing your shell experience. A great icebreaker online is to ask engineers to share their favorite terminal aliases. Some might even be generous enough to share their config file! You can also look to <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases" target="_blank" rel="noopener noreferrer">the <code>common-aliases</code> plugin</a> to get ideas (for <code>bash</code> as well!)</p>
+
+    <h2>More Resources</h2>
+
+      <ul>
+        <li>MIT CSAIL grad and prominent Rust Developer Jon Gjengset's <a href="https://www.youtube.com/watch?v=ycMiMDHopNc" target="_blank" rel="noopener noreferrer">configuration setup walkthrough</a></li>
+        <li><a href="https://terminalsare.sexy/" target="_blank" rel="noopener noreferrer">Terminals Are Sexy</a> "A curated list of Terminal frameworks, plugins & resources for CLI lovers."</li>
+        <li><a href="https://github.com/nvbn/thefuck" target="_blank" rel="noopener noreferrer">The F*ck</a> "a magnificent app that corrects errors in previous console commands."</li>
+        <li><a href="https://github.com/agarrharr/awesome-cli-apps" target="_blank" rel="noopener noreferrer">Awesome-CLI-Apps</a> and <a href="https://github.com/alebcay/awesome-shell" target="_blank" rel="noopener noreferrer">Awesome Shell</a></li>
+        <li></li>
+      </ul>
+
+  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <div class="footer">
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L6/index.html" target="_blank">Edit this page on Github</a>
+      
+      <div class="discord">
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
+      </div> 
+    </div>
+</div>
+
+</html>
