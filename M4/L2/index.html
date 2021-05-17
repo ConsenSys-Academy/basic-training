@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Code Editors</title>
+</head>
+<div class="body">
+  
+  <!-- Title goes below: -->
+  <h1>Visual Studio Code (VSCode)</h1>
+  
+  <!-- Content here: -->
+
+    <p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a> is developed by Microsoft and, since the mid 2010s, has become a dominant visual code editor. It is <a href="https://en.wikipedia.org/wiki/Electron_(software_framework)" target="_blank" rel="noopener noreferrer">Electron-based</a> and can run on Windows, Mac or Linux. It also is open-source with a rigorous development cycle and has a large number of plug-ins, known as extensions. It also has become extremely popular, so software companies like Docker and ConsenSys will build their own VSCode extensions which you can download for free from <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="noopener noreferrer">VSCode's Marketplace.</a></p>
+
+    <p>You can install VSCode on Windows, Mac or Linux <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer">here.</a></p>
+
+    <p>VSCode is a good editor to learn to code on because these extensions can help with the learning process. In this section, we're going to point out a few benefits that VSCode ships with.</p>
+
+    <p><b>If you're on Windows 10, be sure to <a href="https://consensys.net/blog/developers/ethereum-developers-guide-to-setting-up-windows-subsystem-for-linux/" target="_blank" rel="noopener noreferrer">install WSL</a> and <a href="http://" target="_blank" rel="noopener noreferrer">integrate VSCode to run WSL.</a></b></p>
+
+    <h2>Native Features</h2>
+
+      <p>Here are a few features that ship with VSCode you can start using immediately:</p>
+
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Emmet_(software)" target="_blank" rel="noopener noreferrer"><b>Emmet Language</b></a> is a tool that allows for high-speed develompent of HTML, CSS and other structured languages. VSCode supports Emmet out of the box, you can read more about <a href="https://devhints.io/emmet" target="_blank" rel="noopener noreferrer">Emmet abbreviations here</a> and <a href="https://code.visualstudio.com/docs/editor/emmet" target="_blank" rel="noopener noreferrer">Emmet and VSCode here.</a> The images below show how Emmet assists with development:
+        <img src="../../img/emmet-bang-expand.gif" alt="Screencap of emmet expanding exclamation point">
+        <img src="../../img/emmet-ul-li-expand.gif" alt="Screencap of emmet expanding an unordered list">
+        </li>
+        <li><a href="https://docs.microsoft.com/en-us/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar?view=vs-2019" target="_blank" rel="noopener noreferrer"><b>Scrollbar Navigation</b></a> Sometimes you can be dealing with a large codebase. On a single monitor, there isn't a lot of real estate and it can be hard to find your place. VSCode's navigation bar has some helpful features: 
+          <ul>
+            <li>In "Bar Mode," (the standard scrollbar), VSCode can annotate where your cursor is, where you've made changes, instances of a search term or other markers. <a href="https://docs.microsoft.com/en-us/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar?view=vs-2019#annotations" target="_blank" rel="noopener noreferrer">Read about the scroll bar here.</a></li>
+            <li>In "Map Mode," the scrollbar shows a small version of the entire code. You can adjust how wide the scrollbar is and you can enable a larger preview that opens when you hover. You can also scroll using the map mode scrollbar just as you do a regular scrollbar. Read more about map mode <a href="https://docs.microsoft.com/en-us/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar?view=vs-2019#map-mode" target="_blank" rel="noopener noreferrer">here.</a></li>
+          </ul> 
+        </li>
+        <li><a href="https://code.visualstudio.com/docs/getstarted/userinterface#_side-by-side-editing" target="_blank" rel="noopener noreferrer"><b>Split pane</b></a> Another way to navigate a long file or easily toggle between related files is to use side-by-side editing. VSCode allows you to split the editor horizontally or vertically any number of times. You can move files between the panes depending on what you need to see! Read more about <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_side-by-side-editing" target="_blank" rel="noopener noreferrer">side-by-side editing here.</a></li>
+        <li><a href="https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor" target="_blank" rel="noopener noreferrer"><b>Multiple Cursors</b></a> If you need to edit something exactly the same in multiple places, VSCode allows you to use create multiple cursors which will all follow your keyboard commands. For more information about multiple cursors (and multiple selections), <a href="https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor" target="_blank" rel="noopener noreferrer">click here.</a> See the image below for an example:
+        <img src="../../img/vscode-multi.gif" alt="screencast of multiple cursors in vscode">
+        </li>
+        <li><a href="https://code.visualstudio.com/docs/editor/integrated-terminal" target="_blank" rel="noopener noreferrer"><b>Opening a Terminal</b></a> VSCode incorporates your computer's terminal in its application. You can open the terminal, which is opened in the current directory, by pressing CTRL + `, or navigating in the menu to "Terminal > New Terminal"</li>
+        <li><a href="https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line" target="_blank" rel="noopener noreferrer">Launching From Command Line</a> Another nice trick of VSCode is launching in directly from your own command line.  Once you've configured your machine properly, you can navigate to a folder in your computer you'd like to work in and simply run <code>code .</code>. This will open VSCode and load the directory and all its children. Read more about setting this up <a href="https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line" target="_blank" rel="noopener noreferrer">here.</a></li>
+      </ul>
+
+    <p>We're just scratching the surface of VSCode. You can read through their "Getting Started" page, which includes Tips and Tricks <a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" target="_blank" rel="noopener noreferrer">here.</a></p>
+
+
+  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <div class="footer">
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M4/L2/index.html" target="_blank">Edit this page on Github</a>
+      
+      <div class="discord">
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
+      </div> 
+    </div>
+</div>
+
+</html>
