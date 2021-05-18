@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="../../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Git</title>
+</head>
+<div class="body">
+  
+  <!-- Title goes below: -->
+  <h1>Setting Up Github</h1>
+  
+  <!-- Content here: -->
+
+    <p>In this section, we're going to setup a Github account and make sure we can push to it from our command line. Even though there are other Git websites, Github is the most popular. We are not saying it's the best, but it is very common with multi-lingual, extensive support. Another option, if you prefer, is <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">Gitlab,</a> but if you're doing the Bootcamp, we'd appreciate it if you used Github.</p>
+
+    <p>You can use <code>$ git clone</code> from your command line without a Github account or Personal Access Token (see below). You can also write commits, create pull requests, and create repositories from the Github website in your browser. But that's not always the fastest way to work and you should setup Git to interact with Github from your command line. Follow the steps below to do so.</p>
+
+    <h2>Sign Up for a Github Account</h2>
+
+      <p><a href="https://github.com/join" target="_blank" rel="noopener noreferrer">Click here</a> to be taken to the sign-up page for Github. Pick a username, provide your e-mail address and create a password. Once you've registered, Github requires you to confirm your e-mail address. After that, you should be ready to go!</p>
+
+    <h2>Setup Github on Command Line</h2>
+
+      <h3>Install Git</h3>
+        <p>Git comes installed default on almost all Mac and Linux systems. Make sure you have Git 1.7.10 or later installed by running <code>$ git --version</code> on your command line. If you get an error or have an earlier version, follow the instructions for installing Git on Mac or Linux <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">here.</a> If you're using Windows, be sure to <a href="https://consensys.net/blog/developers/ethereum-developers-guide-to-setting-up-windows-subsystem-for-linux/" target="_blank" rel="noopener noreferrer">install WSL</a> and make sure Git is installed on your WSL.</p>
+
+      <h3>Personal Access Token</h3>  
+        <p>Next, you need to generate a Personal Access Token from Github. To generate this token, be sure you are registered on Github and follow <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" target="_blank" rel="noopener noreferrer">these instructions.</a> <b>The Personal Access Token is like your password and should not be published or shared.</b></p>
+
+      <h3>Git Credential Caching</h3>
+
+        <p>When you're pushing a commit to a Github remote repository, Github will require you to provide your username and Personal Access Token from the command line. You can provide this every time or, if you use Credential Caching, you can do it once and Git will remember it until you change it.</p>
+
+        <p>To use Git Credential Caching, you'll need Git version 1.7.10 or higher and a Github username and <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" target="_blank" rel="noopener noreferrer">Personal Access Token.</a> Once you have those, you can <a href="https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git" target="_blank" rel="noopener noreferrer">follow the instructions here</a> on how to do Credential caching for both Mac and Linux.</p>
+
+        <p>While it's a bit tricky to get setup, it will save you a lot of time in the long run. If you're having a lot of trouble with it, you don't have to struggle on. It's not absolutely necessary, but it is nice to have</p>
+      
+
+  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <div class="footer">
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M5/L2/index.html" target="_blank">Edit this page on Github</a>
+      
+      <div class="discord">
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
+      </div> 
+    </div>
+</div>
+
+</html>
