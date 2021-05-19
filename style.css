@@ -50,6 +50,10 @@ li {
   /* list-style: none; */
 }
 
+.img-wrapper {
+  max-width: 500px;
+}
+
 img {
   width: 100%;
 }
