@@ -1,89 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <link rel="stylesheet" href="../../style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
-  <script src="../../js/text-bounce.js" async></script>
-  <title>Command Line</title>
-</head>
-<div class="body">
-  
-  <!-- Title goes below: -->
-  <h1>Common Commands</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      async
+    ></script>
+    <script src="../../js/text-bounce.js" async></script>
+    <title>Command Line</title>
+  </head>
+  <div class="body">
+    <!-- Title goes below: -->
+    <h1>Common Commands</h1>
 
-  <!-- Content here: -->
+    <!-- Content here: -->
 
-  <p>This lesson is a list of common commands with an explanation or example and a link to more information about it. If you'd like to learn more about a certain command, you can see the "More Resources" section in the next lesson or you can use the <code>man [COMMAND]</code> command, which will open the <b>man</b>ual page on a MacOS or Linux terminal (to exit the <code>man</code> page, please type the letter <code>q</code>). You can also Google "[COMMAND YOU'D LIKE TO LEARN MORE ABOUT] terminal command," which hopefully will get you some fruitful results.</p>
+    <p>
+      This lesson is a list of common commands with an explanation or example
+      and a link to more information about them. If you'd like to learn more
+      about a certain command, you can see the "More Resources" section in the
+      next lesson or you can use the <code>man [COMMAND]</code> command, which
+      will open the <b>man</b>ual page on a MacOS or Linux terminal (to exit the
+      <code>man</code> page, please type the letter <code>q</code>). You can
+      also Google "[COMMAND YOU'D LIKE TO LEARN MORE ABOUT] terminal command,"
+      which hopefully will get you some fruitful results.
+    </p>
 
-  <p><i>Note: these commands are compiled from <a href="https://help.ubuntu.com/community/UsingTheTerminal" target="_blank" rel="noopener noreferrer">the Ubuntu Help site</a> and the <a href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/" target="_blank" rel="noopener noreferrer">Reddit site r/commandline,</a> please visit them if you'd like to learn more.</i></p>
+    <p>
+      <i
+        >Note: these commands are compiled from
+        <a
+          href="https://help.ubuntu.com/community/UsingTheTerminal"
+          target="_blank"
+          rel="noopener noreferrer"
+          >the Ubuntu Help site</a
+        >
+        and the
+        <a
+          href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Reddit site r/commandline,</a
+        >
+        please visit them if you'd like to learn more.</i
+      >
+    </p>
 
     <h2>File and Directory Commands</h2>
-      <ol>
-        <li><code>$</code> is the command line prompt and <code>~</code> is stands for your home directory (more on <a href="https://twiki.org/cgi-bin/view/Wikilearn/TildeSlash" target="_blank" rel="noopener noreferrer">~</a> here)</li>
-        <li><code>pwd</code> allows you "to find out the path of the current working directory (folder) you’re in. The command will return an absolute (full) path, which is basically a path of all the directories that starts with a forward slash (/). An example of an absolute path is /home/username." (<a href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/" target="_blank" rel="noopener noreferrer">source</a>)</li>
-        <li><code>cd</code> "allow[s] you to change directories. When you open a terminal you will be in your home directory. To move around the file system you will use cd. To navigate to your home directory, use <code>cd</code> or <code>cd ~</code>; To navigate up one directory level, use <code>cd ..</code>. To navigate through multiple levels of directory at once, specify the full directory path that you want to go to. For example, use, <code>cd /var/www</code> to go directly to the <code>/www</code> subdirectory of <code>/var/.</code> As another example, <code>cd ~/Desktop</code> will move you to the <code>Desktop</code> subdirectory inside your home directory.</li>
-        <li><code>ls</code> "is used to view the contents of a directory. By default, this command will display the contents of your current working directory. If you want to see the content of other directories, type <code>ls</code> and then the directory’s path. For example, enter <code>ls /home/username/Documents</code> to view the content of <code>Documents</code>. There are variations you can use with the ls command: 
+    <ol>
+      <li>
+        <code>$</code> is the command line prompt and <code>~</code> is stands
+        for your home directory (more on
+        <a
+          href="https://twiki.org/cgi-bin/view/Wikilearn/TildeSlash"
+          target="_blank"
+          rel="noopener noreferrer"
+          >~</a
+        >
+        here)
+      </li>
+      <br />
+      <li>
+        <code>pwd</code> allows you "to find out the path of the current working
+        directory (folder) you’re in. The command will return an absolute (full)
+        path, which is basically a path of all the directories that starts with
+        a forward slash (/). An example of an absolute path is /home/username."
+        (<a
+          href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >source</a
+        >)
+      </li>
+      <br />
+      <li>
+        <code>cd</code> "allow[s] you to change directories. When you open a
+        terminal you will be in your home directory. To move around the file
+        system you will use cd.
+        <ul>
+          <li>
+            To navigate to your home directory, use
+            <code>cd</code> or <code>cd ~</code>;
+          </li>
+          <li>To navigate up one directory level, use <code>cd ..</code>.</li>
+          <li>
+            To navigate through multiple levels of directory at once, specify
+            the full directory path that you want to go to. For example, use:
+          </li>
           <ul>
-            <li><code>ls -R</code> will list all the files in the sub-directories as well.</li> <li><code>ls -a</code> will show the hidden files.</li> 
-            <li><code>ls -al</code> will list the files and directories with detailed information like the permissions, size, owner, etc."</li>
+            <li>
+              <code>cd /var/www</code> to go directly to the
+              <code>/www</code> subdirectory of <code>/var/.</code>
+            </li>
+            <li>
+              As another example, <code>cd ~/Desktop</code> will move you to the
+              <code>Desktop</code> subdirectory inside your home directory.
+            </li>
           </ul>
-        </li>
-        <li><code>mkdir</code> "The <code>mkdir</code> command will allow you to create directories. Example: <code>mkdir music</code> will create a directory called <code>music</code>" Remember, a common multiple command line is <code>mkdir NEW_DIRECTORY && cd NEW_DIRECTORY</code>.</li>
-        <li><code>clear</code> will clear all typing on the terminal and give you a fresh line.</li>
-        <li><code>CONTROL + c</code> will interrupt any terminal process and return you to the prompt.</li>
-        <li><code>cat</code> "is used to list the contents of a file [...]. To run this command, type <code>cat</code> followed by the file’s name and its extension. For instance: <code>cat file.txt</code>."</li>
-        <li><code>cp</code> "cop[ies] files from the current directory to a different directory. For instance, the command <code>cp scenery.jpg /home/username/Pictures</code> would create a copy of <code>scenery.jpg</code> (from your current directory) into the <code>Pictures</code> directory."</li>
-        <li><code>mv</code> "is to [used to] move files, although it can also be used to rename files. The arguments in <code>mv</code> are similar to the <code>cp</code> command. You need to type <code>mv</code>, the file’s name, and the destination’s directory. For example: <code>mv file.txt /home/username/Documents</code>. To rename files, the command is <code>mv oldname.ext newname.ext</code>"</li>
-        <li><b>Command History</b> to access any commands you've run, simply press the "up" arrow on the command line prompt. The terminal will scroll through the history of your commands starting from the most recent. To execute the command, simply hit <code>enter</code></li>
-      </ol>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <code>ls</code> "is used to view the contents of a directory. By
+        default, this command will display the contents of your current working
+        directory. If you want to see the content of other directories, type
+        <code>ls</code> and then the directory’s path. For example, enter
+        <code>ls /home/username/Documents</code> to view the content of
+        <code>Documents</code>. There are variations you can use with the ls
+        command:
+        <ul>
+          <li>
+            <code>ls -R</code> will list all the files in the sub-directories as
+            well.
+          </li>
+          <li><code>ls -a</code> will show the hidden files.</li>
+          <li>
+            <code>ls -al</code> will list the files and directories with
+            detailed information like the permissions, size, owner, etc."
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <code>mkdir</code> "The <code>mkdir</code> command will allow you to
+        create directories. Example: <code>mkdir music</code> will create a
+        directory called <code>music</code>" Remember, a common multiple command
+        line is <code>mkdir NEW_DIRECTORY && cd NEW_DIRECTORY</code>.
+      </li>
+      <br />
+      <li>
+        <code>clear</code> will clear all typing on the terminal and give you a
+        fresh line.
+      </li>
+      <br />
+      <li>
+        <code>CONTROL + c</code> will interrupt any terminal process and return
+        you to the prompt.
+      </li>
+      <br />
+      <li>
+        <code>cat</code> "is used to list the contents of a file [...]. To run
+        this command, type <code>cat</code> followed by the file’s name and its
+        extension. For instance: <code>cat file.txt</code>."
+      </li>
+      <br />
+      <li>
+        <code>cp</code> "cop[ies] files from the current directory to a
+        different directory. For instance, the command
+        <code>cp scenery.jpg /home/username/Pictures</code> would create a copy
+        of <code>scenery.jpg</code> (from your current directory) into the
+        <code>Pictures</code> directory."
+      </li>
+      <br />
+      <li>
+        <code>mv</code> "is to [used to] move files, although it can also be
+        used to rename files. The arguments in <code>mv</code> are similar to
+        the <code>cp</code> command. You need to type <code>mv</code>, the
+        file’s name, and the destination’s directory. For example:
+        <code>mv file.txt /home/username/Documents</code>. To rename files, the
+        command is <code>mv oldname.ext newname.ext</code>"
+      </li>
+      <br />
+      <li>
+        <b>Command History</b> to access any commands you've run, simply press
+        the "up" arrow on the command line prompt. The terminal will scroll
+        through the history of your commands starting from the most recent. To
+        execute the command, simply hit <code>enter</code>
+      </li>
+    </ol>
     <h2>Running an File (Application) within a Directory</h2>
-      <li>It's possible to run some files from the command line. Typically, these files end in an extension like <code>.sh</code>. To run a file, navigate to the directory holding the file and use the format: <code>$ ./filename.extension</code>. Certain files cannot be run by themselves from the command line like this, however. For <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" rel="noopener noreferrer">Python</a> files, for example, you need to make sure Python is installed and use the format <code>$ python python-file-name.py</code>. For JavaScript files, you need to <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">install Node</a> and run with the format <code>$ node javascriptFile.js</code></li>
+    <li>
+      It's possible to run some files from the command line. Typically, these
+      files end in an extension like <code>.sh</code>. To run a file, navigate
+      to the directory holding the file and use the format:
+      <code>$ ./filename.extension</code>. Certain files cannot be run by
+      themselves from the command line like this, however. For
+      <a
+        href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Python</a
+      >
+      files, for example, you need to make sure Python is installed and use the
+      format <code>$ python python-file-name.py</code>. For JavaScript files,
+      you need to
+      <a
+        href="https://nodejs.org/en/download/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >install Node</a
+      >
+      and run with the format <code>$ node javascriptFile.js</code>
+    </li>
     <h2>System Information Commands</h2>
-      <ol>
-        <li><code>top</code> (<b>t</b>able <b>o</b>f <b>p</b>rocesses) command allows you to quickly see the what programs are running on your machine and how many resources they are consuming. It's a quick alternative to the Activity Monitor in MacOS or Task Manager in Windows. To quit <code>top</code>, simply press <code>q</code></li>
-      </ol>
+    <ol>
+      <li>
+        <code>top</code> (<b>t</b>able <b>o</b>f <b>p</b>rocesses) command
+        allows you to quickly see the what programs are running on your machine
+        and how many resources they are consuming. It's a quick alternative to
+        the Activity Monitor in MacOS or Task Manager in Windows. To quit
+        <code>top</code>, simply press <code>q</code>
+      </li>
+    </ol>
     <h2>Networking and Internet Commands</h2>
-      <i>Note: Always be careful when downloading from the command line. The GUI provides safeguards and visual cues to keep you aware of nefarious activity, but that might not be the case with your command line. Only download from locations you trust and triple-check before running software you've downloaded.</i>
-      <ol>
-        <li><b>Downloading a File</b> to download a file from a specific internet address, you use <code>curl ADDRESS_OF_FILE</code> on MacOS and <code>wget ADDRESS_OF_FILE</code> on Linux. The file will download to the current directory you run the command in. If you need to move the file to another directory, use <code>mv</code></li>
-        <li><b>Decompressing / Unarchiving files</b> Software may be "bundled" or compressed with <code>tar</code> or <code>zip</code> formats. Use the <code>tar</code> and <code>unzip</code> commands to decompress the files into your current directory. To learn more, type <code>man gunzip</code> or <code>man tar</code> in your terminal.</li>
-      </ol>
+    <i
+      >Note: Always be careful when downloading from the command line. The GUI
+      provides safeguards and visual cues to keep you aware of nefarious
+      activity, but that might not be the case with your command line. Only
+      download from locations you trust and triple-check before running software
+      you've downloaded.</i
+    >
+    <ol>
+      <li>
+        <b>Downloading a File</b> to download a file from a specific internet
+        address, you use <code>curl ADDRESS_OF_FILE</code> on MacOS and
+        <code>wget ADDRESS_OF_FILE</code> on Linux. The file will download to
+        the current directory you run the command in. If you need to move the
+        file to another directory, use <code>mv</code>
+      </li>
+      <br />
+      <li>
+        <b>Decompressing / Unarchiving files</b> Software may be "bundled" or
+        compressed with <code>tar</code> or <code>zip</code> formats. Use the
+        <code>tar</code> and <code>unzip</code> commands to decompress the files
+        into your current directory. To learn more, type
+        <code>man gunzip</code> or <code>man tar</code> in your terminal.
+      </li>
+    </ol>
 
     <h2>A note on <code>sudo</code> and privileges</h2>
-      <p>In trying out some command line exercises, you may have been confronted with a message that looked something like this:</p>
+    <p>
+      In trying out some command line exercises, you may have been confronted
+      with a message that looked something like this:
+    </p>
 
-      <pre>You do not have sufficient privilege to perform this operation.</pre>
+    <pre>You do not have sufficient privilege to perform this operation.</pre>
 
-      <p>Certain important files are protected from being read or changed by the user. However, these permissions can be changed or overridden by putting <code>sudo</code> at the beginning of your command. <b>You must be extremely careful about using this, though, as you can accidentally commit serious damage to your computer while operating as <code>sudo</code></b></p>
-        
-      <p>You can learn more about privileges and sudo from <a href="https://kb.iu.edu/d/abdb" target="_blank" rel="noopener noreferrer">this website here.</a></p>
+    <p>
+      Certain important files are protected from being read or changed by the
+      user. However, these permissions can be changed or overridden by putting
+      <code>sudo</code> at the beginning of your command.
+      <b
+        >You must be extremely careful about using this, though, as you can
+        accidentally commit serious damage to your computer while operating as
+        <code>sudo</code></b
+      >
+    </p>
 
-    <h2>$PATH</h2>
+    <p>
+      You can learn more about privileges and sudo from
+      <a
+        href="https://kb.iu.edu/d/abdb"
+        target="_blank"
+        rel="noopener noreferrer"
+        >this website here.</a
+      >
+    </p>
 
-  <h1>More Resources</h1>
-  <p>We've just scratched surface on the command line. To learn more, please visit the links below:</p>
-  <ul>
-    <li><code>man intro</code>: If you type this into your MacOS or Linux prompt, it will walk you through a command line basics in your own terminal.</li>
-    <li><a href="https://help.ubuntu.com/community/UsingTheTerminal" target="_blank" rel="noopener noreferrer">Ubuntu Help: Using the Terminal</a></li>
-    <li><a href="https://help.ubuntu.com/community/AdvancedCommandlineHowto" target="_blank" rel="noopener noreferrer">Ubuntu Help: Advanced Command Line</a></li>
-    <li><a href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/" target="_blank" rel="noopener noreferrer">Reddit: Linux Basic Commands Every User Should Know</a> Most are also applicable to MacOS</li>
-    <li><a href="https://missing.csail.mit.edu/2020/course-shell/" target="_blank">MIT: Your Missing CS Semester: The Shell</a> and <a href="https://missing.csail.mit.edu/2020/shell-tools/" target="_blank">Shell Tools</a></li>
-    <li><a href="https://www.theodinproject.com/courses/foundations/lessons/command-line-basics-web-development-101" target="_blank">The Odin Project: Command Line Basics</a></li>
-    <li><a href="https://kb.iu.edu/d/abdb" target="_blank" rel="noopener noreferrer">Managing File Permissions on Linux-like systems</a></li>
-  </ul>
+    <!-- <h2>$PATH</h2> -->
 
+    <h1>More Resources</h1>
+    <p>
+      We've just scratched surface on the command line. To learn more, please
+      visit the links below:
+    </p>
+    <ul>
+      <li>
+        <code>man intro</code>: If you type this into your MacOS or Linux
+        prompt, it will walk you through a command line basics in your own
+        terminal.
+      </li>
+      <li>
+        <a
+          href="https://help.ubuntu.com/community/UsingTheTerminal"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ubuntu Help: Using the Terminal</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://help.ubuntu.com/community/AdvancedCommandlineHowto"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Ubuntu Help: Advanced Command Line</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.reddit.com/r/commandline/comments/myquqp/linux_basic_commands_every_user_should_know/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Reddit: Linux Basic Commands Every User Should Know</a
+        >
+        Most are also applicable to MacOS
+      </li>
+      <li>
+        <a
+          href="https://missing.csail.mit.edu/2020/course-shell/"
+          target="_blank"
+          >MIT: Your Missing CS Semester: The Shell</a
+        >
+        and
+        <a
+          href="https://missing.csail.mit.edu/2020/shell-tools/"
+          target="_blank"
+          >Shell Tools</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.theodinproject.com/courses/foundations/lessons/command-line-basics-web-development-101"
+          target="_blank"
+          >The Odin Project: Command Line Basics</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://kb.iu.edu/d/abdb"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Managing File Permissions on Linux-like systems</a
+        >
+      </li>
+    </ul>
 
-
-  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
-      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L3/index.html" target="_blank">Edit this page on Github</a>
-      
-      <div class="discord">
-        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
-      </div> 
-    </div>
-</div>
+      <a
+        href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L3/index.html"
+        target="_blank"
+        >Edit this page on Github</a
+      >
 
+      <div class="discord">
+        <img
+          class="discord-logo"
+          src="../../img/discord.svg"
+          alt="Discord logo"
+        /><a href="https://discord.gg/FrHSjSn9dX" target="_blank"
+          >Questions? Ask on Discord!
+        </a>
+      </div>
+    </div>
+  </div>
 </html>
