@@ -47,8 +47,9 @@ p {
 }
 
 li {
-  /* list-style: none; */
+  padding: 8px 0px;
 }
+
 
 .img-wrapper {
   max-width: 500px;
@@ -56,6 +57,7 @@ li {
 
 img {
   width: 100%;
+  padding: 8px;
 }
 
 /* ul {
@@ -118,7 +120,7 @@ a:hover:before {
 
 .discord-logo {
   width: 30px;
-  padding-right: 8px;
+  padding: 0px 8px;
 }
 
 /* currently .column and .row:after are only used for "M0L1" section */

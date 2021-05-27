@@ -49,6 +49,7 @@
     </p>
 
     <h2>File and Directory Commands</h2>
+
     <ol>
       <li>
         <code>$</code> is the command line prompt and <code>~</code> is stands
@@ -61,6 +62,7 @@
         >
         here)
       </li>
+
       <li>
         <code>pwd</code> allows you "to find out the path of the current working
         directory (folder) you’re in. The command will return an absolute (full)
@@ -87,6 +89,7 @@
             To navigate through multiple levels of directory at once, specify
             the full directory path that you want to go to. For example, use:
           </li>
+
           <ul>
             <li>
               <code>cd /var/www</code> to go directly to the
@@ -99,6 +102,7 @@
           </ul>
         </ul>
       </li>
+
       <li>
         <code>ls</code> "is used to view the contents of a directory. By
         default, this command will display the contents of your current working
@@ -119,16 +123,19 @@
           </li>
         </ul>
       </li>
+
       <li>
         <code>mkdir</code> "The <code>mkdir</code> command will allow you to
         create directories. Example: <code>mkdir music</code> will create a
         directory called <code>music</code>" Remember, a common multiple command
         line is <code>mkdir NEW_DIRECTORY && cd NEW_DIRECTORY</code>.
       </li>
+
       <li>
         <code>clear</code> will clear all typing on the terminal and give you a
         fresh line.
       </li>
+
       <li>
         <code>CONTROL + c</code> will interrupt any terminal process and return
         you to the prompt.
@@ -138,6 +145,7 @@
         this command, type <code>cat</code> followed by the file’s name and its
         extension. For instance: <code>cat file.txt</code>."
       </li>
+
       <li>
         <code>cp</code> "cop[ies] files from the current directory to a
         different directory. For instance, the command
@@ -145,6 +153,7 @@
         of <code>scenery.jpg</code> (from your current directory) into the
         <code>Pictures</code> directory."
       </li>
+
       <li>
         <code>mv</code> "is to [used to] move files, although it can also be
         used to rename files. The arguments in <code>mv</code> are similar to
@@ -153,6 +162,7 @@
         <code>mv file.txt /home/username/Documents</code>. To rename files, the
         command is <code>mv oldname.ext newname.ext</code>"
       </li>
+
       <li>
         <b>Command History</b> to access any commands you've run, simply press
         the "up" arrow on the command line prompt. The terminal will scroll
@@ -210,6 +220,7 @@
         the current directory you run the command in. If you need to move the
         file to another directory, use <code>mv</code>
       </li>
+
       <li>
         <b>Decompressing / Unarchiving files</b> Software may be "bundled" or
         compressed with <code>tar</code> or <code>zip</code> formats. Use the
@@ -226,6 +237,7 @@
     </p>
 
     <pre>You do not have sufficient privilege to perform this operation.</pre>
+
 
     <p>
       Certain important files are protected from being read or changed by the
@@ -248,7 +260,31 @@
       >
     </p>
 
-    <!-- <h2>$PATH</h2> -->
+    <h2>$PATH</h2>
+      <p><code>$PATH</code> "is an environment variable on Unix-like 
+        operating systems specifying a set of directories 
+        where executable programs are located" 
+        <a href="https://en.wikipedia.org/wiki/PATH_(variable)" 
+        target="_blank" rel="noopener noreferrer"></a>(source).</a></p>
+      
+        <p>$PATH is important because it allows you to run programs
+          from your command line without specifying the directory where
+        the program is located. For example, you can run <code>$ npm 
+        install dependencies</code> without specifying where <code>npm</code> 
+        is located because your computer has Node and <code>npm</code> 
+        linked on the <code>$PATH</code> variable.</p>
+
+        <p>
+          Sometimes you can encounter errors because your <code>$PATH</code> variable 
+          is not configured correctly. In that case, you'll have to make changes to the 
+          file. To find your $PATH in Linux, please see 
+          <a href="https://smallbusiness.chron.com/modify-path-ubuntu-52030.html" 
+          target="_blank" rel="noopener noreferrer">this article.</a>
+        </p>
+        <p>
+          To find your <code>$PATH</code> on Mac, please see 
+          <a href="https://wpbeaches.com/how-to-add-to-the-shell-path-in-macos-using-terminal/" target="_blank" rel="noopener noreferrer">this article.</a> 
+        </p>
 
     <h1>More Resources</h1>
     <p>
