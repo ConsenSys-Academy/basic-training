@@ -4,9 +4,3 @@
 --brew install figlet for ascii art
 
 --convert links to archive.org?
-
-graphics & animations:
-linux penguin and mac os logo
-command line: blinking prompt, a few commands, alias commands, color & customization
-git: animation of branches, like: https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=1612
-  --make the inner part of the circle mask, but not the border -- wil create a bubbling effect
