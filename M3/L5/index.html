@@ -39,7 +39,7 @@
 
   <h2>Remapping</h2>
 
-    <p>Remapping is the process of changing one key on your keyboard to be another. For example, you can see in the list above, many of these shortcuts use CTRL. Because of this, a common remapping developers use is making your computer think your "Caps Lock" key is actually CTRL. You can find out how to do that <a href="https://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/" target="_blank" rel="noopener noreferrer">here.</a> You use your CTRL key way more often than you do your Caps Lock. How often do you actually use your Caps Lock??</p>
+    <p>Remapping is the process of changing one key on your keyboard to be another. For example, you can see in the list above, many of these shortcuts use CTRL. Because of this, a common remapping developers use is making your computer think your "Caps Lock" key is actually CTRL. You can find out how to do that <a href="https://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/" target="_blank" rel="noopener noreferrer">here.</a> You use your CTRL key way more often than you do your Caps Lock. How often do you actually use your Caps Lock?</p>
 
     <p>As you continue to use your terminal, you may find other keys you'd like better access to. Consider remapping them if it makes your life a bit easier.</p>
 
@@ -50,13 +50,16 @@
     <p>Many terminal clients allow you to customize their color, font, sizing, and layout. This not only is fun, but also can help with readability and eye strain. We'll look at a few options for colors and fonts</p>
 
     <h3>Colors</h3>
-      <p>The besy way to change the color of your terminal is to find a good <b>color theme</b>. Color themes are sets of colors with an overall coherence that can be loaded in all at once. As an added bonus, you can replicate a good color theme in both your terminal client and code editor.</p>
+      <p>The best way to change the color of your terminal is to find a good <b>color theme</b>. Color themes are sets of colors with an overall coherence that can be loaded in all at once. As an added bonus, you can replicate a good color theme in both your terminal client and code editor.</p>
 
       <p>Here are a few ways to change your terminal's color theme:
         <ul>
           <li><a href="https://opensource.com/article/19/8/add-color-linux-terminal" target="_blank" rel="noopener noreferrer">Here's how to change your terminal's color theme on Linux</a></li>
+          <br>
           <li><a href="https://iterm2.com/documentation-preferences-profiles-colors.html" target="_blank" rel="noopener noreferrer">Here's how to change your iTerm color scheme</a> and <a href="https://www.freecodecamp.org/news/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22/" target="_blank" rel="noopener noreferrer">here's how to customize your Mac terminal</a></li>
+          <br>
           <li><a href="https://linuxconfig.org/the-best-linux-terminal-color-schemes-for-2019" target="_blank" rel="noopener noreferrer">Here are some good color themes for Linux</a> and <a href="https://iterm2colorschemes.com/" target="_blank" rel="noopener noreferrer">here are some good iTerm colors</a> that can give inspiration for other terminals as well.</li>
+          <br>
           <li>A fun tool is <a href="https://github.com/busyloop/lolcat" target="_blank" rel="noopener noreferrer">the lolcat project,</a> which acts like the <code>cat</code> command, but the output is in rainbow! You have to see it to believe it. See <a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank" rel="noopener noreferrer">Sarah Drasner's post</a> about how to incorporate it best.</li>
         </ul>
       </p>
@@ -76,10 +79,11 @@
     <p>For those interested, we'd recommend a two step process for developing effective aliases:
       <ol>
         <li>Find what commands you use most frequently. There are a few ways to do this, but, if your history is long enough, the following command may work on a UNIX-like system: <code>history | awk '{print $2}' | sort | uniq -c | sort -rn | head</code>. Note: to make this most effective, you typically must increase your history and specify terminal to save history when exiting, otherwise you will only have the commands you've used recently. Please see the next section on <b>Shell Frameworks</b> to see how to do this.</li>
+        <br>
         <li>Once you've found which commands you use the most, you need to locate the correct file to create your aliases. This is typically a <code>profile</code> or a run command (<code>rc</code>) file but <i>which</i> run command file depends on your shell. If you're using <code>bash</code>, you'll want to create or edit <code>~/.bash_profile</code> or <code>~/.bashrc</code>. If you're using <code>zsh</code>, the default for MacOS 10.15 Catalina and later, you'll want to edit <code>~/.zprofile</code> or <code>~/.zshrc</code>. See <a href="https://superuser.com/questions/187639/zsh-not-hitting-profile" target="_blank" rel="noopener noreferrer">this Superuser post</a> for more information on <code>profile</code> and <code>rc</code> files.</li>
       </ol>
     </p>
-
+  
     <p>Once you've found the command(s) you'd like to create the aliases for and the proper place to put them, you can create an alias using the following syntax options (<a href="https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html" target="_blank" rel="noopener noreferrer">taken from this site</a>):</p>
 
     <pre>
