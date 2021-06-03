@@ -24,6 +24,7 @@ html {
   min-height: 100%;
   font-family:  -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   /* font-size: var(--font-size--default); */
+  line-height: 1.5;
 }
 
 h1 {
