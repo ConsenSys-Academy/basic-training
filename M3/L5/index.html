@@ -33,13 +33,13 @@
       <li><b>CTRL + r</b> Search your previous command history, easier than using up or down arrows</li>
     </ul>
 
-    <p>For more Linux shortcuts, please see <a href="https://dev.to/yashsugandh/keyboard-shortcuts-for-linux-terminal-19ml" target="_blank" >this article.</a> For more Mac shortcuts, please see <a href="https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/" target="_blank" >this article.</a></p>
+    <p>For more Linux shortcuts, please see <a href="https://dev.to/yashsugandh/keyboard-shortcuts-for-linux-terminal-19ml" target="_blank">this article.</a> For more Mac shortcuts, please see <a href="https://www.idownloadblog.com/2020/03/10/mac-keyboard-shortcuts-terminal/" target="_blank">this article.</a></p>
 
   </p>
 
   <h2>Remapping</h2>
 
-    <p>Remapping is the process of changing one key on your keyboard to be another. For example, you can see in the list above, many of these shortcuts use CTRL. Because of this, a common remapping developers use is making your computer think your "Caps Lock" key is actually CTRL. You can find out how to do that <a href="https://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/" target="_blank" >here.</a> You use your CTRL key way more often than you do your Caps Lock. How often do you actually use your Caps Lock?</p>
+    <p>Remapping is the process of changing one key on your keyboard to be another. For example, you can see in the list above, many of these shortcuts use CTRL. Because of this, a common remapping developers use is making your computer think your "Caps Lock" key is actually CTRL. You can find out how to do that <a href="https://www.howtogeek.com/194705/how-to-disable-or-reassign-the-caps-lock-key-on-any-operating-system/" target="_blank">here.</a> You use your CTRL key way more often than you do your Caps Lock. How often do you actually use your Caps Lock?</p>
 
     <p>As you continue to use your terminal, you may find other keys you'd like better access to. Consider remapping them if it makes your life a bit easier.</p>
 
@@ -54,18 +54,18 @@
 
       <p>Here are a few ways to change your terminal's color theme:
         <ul>
-          <li><a href="https://opensource.com/article/19/8/add-color-linux-terminal" target="_blank" >Here's how to change your terminal's color theme on Linux</a></li>
+          <li><a href="https://opensource.com/article/19/8/add-color-linux-terminal" target="_blank">Here's how to change your terminal's color theme on Linux</a></li>
           <br>
-          <li><a href="https://iterm2.com/documentation-preferences-profiles-colors.html" target="_blank" >Here's how to change your iTerm color scheme</a> and <a href="https://www.freecodecamp.org/news/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22/" target="_blank" >here's how to customize your Mac terminal</a></li>
+          <li><a href="https://iterm2.com/documentation-preferences-profiles-colors.html" target="_blank">Here's how to change your iTerm color scheme</a> and <a href="https://www.freecodecamp.org/news/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22/" target="_blank">here's how to customize your Mac terminal</a></li>
           <br>
-          <li><a href="https://linuxconfig.org/the-best-linux-terminal-color-schemes-for-2019" target="_blank" >Here are some good color themes for Linux</a> and <a href="https://iterm2colorschemes.com/" target="_blank" >here are some good iTerm colors</a> that can give inspiration for other terminals as well.</li>
+          <li><a href="https://linuxconfig.org/the-best-linux-terminal-color-schemes-for-2019" target="_blank">Here are some good color themes for Linux</a> and <a href="https://iterm2colorschemes.com/" target="_blank">here are some good iTerm colors</a> that can give inspiration for other terminals as well.</li>
           <br>
-          <li>A fun tool is <a href="https://github.com/busyloop/lolcat" target="_blank" >the lolcat project,</a> which acts like the <code>cat</code> command, but the output is in rainbow! You have to see it to believe it. See <a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank" >Sarah Drasner's post</a> about how to incorporate it best.</li>
+          <li>A fun tool is <a href="https://github.com/busyloop/lolcat" target="_blank">the lolcat project,</a> which acts like the <code>cat</code> command, but the output is in rainbow! You have to see it to believe it. See <a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank">Sarah Drasner's post</a> about how to incorporate it best.</li>
         </ul>
       </p>
 
     <h3>Fonts</h3>
-      <p>Changing fonts on your terminal can be very impactful for readability and strain. There are a lot of options (if you're doing a lot of Git, vim and Python work, you might want to consider Powerline, but it's quite advanced.). We'll link to <a href="https://wesbos.com/programming-fonts" target="_blank" >this Wes Bos article</a> which lists fonts good for your terminal. We wouldn't recommend purchasing a font if you're just starting, but play around with some free ones!</p>
+      <p>Changing fonts on your terminal can be very impactful for readability and strain. There are a lot of options (if you're doing a lot of Git, vim and Python work, you might want to consider Powerline, but it's quite advanced.). We'll link to <a href="https://wesbos.com/programming-fonts" target="_blank">this Wes Bos article</a> which lists fonts good for your terminal. We wouldn't recommend purchasing a font if you're just starting, but play around with some free ones!</p>
       
       <p>Another important aspect of font is size, kern spacing and line height spacing. Again, it's to your own preferences, so experiment and see what you like!</p>
 
@@ -80,11 +80,11 @@
       <ol>
         <li>Find what commands you use most frequently. There are a few ways to do this, but, if your history is long enough, the following command may work on a UNIX-like system: <code>history | awk '{print $2}' | sort | uniq -c | sort -rn | head</code>. Note: to make this most effective, you typically must increase your history and specify terminal to save history when exiting, otherwise you will only have the commands you've used recently. Please see the next section on <b>Shell Frameworks</b> to see how to do this.</li>
         <br>
-        <li>Once you've found which commands you use the most, you need to locate the correct file to create your aliases. This is typically a <code>profile</code> or a run command (<code>rc</code>) file but <i>which</i> run command file depends on your shell. If you're using <code>bash</code>, you'll want to create or edit <code>~/.bash_profile</code> or <code>~/.bashrc</code>. If you're using <code>zsh</code>, the default for MacOS 10.15 Catalina and later, you'll want to edit <code>~/.zprofile</code> or <code>~/.zshrc</code>. See <a href="https://superuser.com/questions/187639/zsh-not-hitting-profile" target="_blank" >this Superuser post</a> for more information on <code>profile</code> and <code>rc</code> files.</li>
+        <li>Once you've found which commands you use the most, you need to locate the correct file to create your aliases. This is typically a <code>profile</code> or a run command (<code>rc</code>) file but <i>which</i> run command file depends on your shell. If you're using <code>bash</code>, you'll want to create or edit <code>~/.bash_profile</code> or <code>~/.bashrc</code>. If you're using <code>zsh</code>, the default for MacOS 10.15 Catalina and later, you'll want to edit <code>~/.zprofile</code> or <code>~/.zshrc</code>. See <a href="https://superuser.com/questions/187639/zsh-not-hitting-profile" target="_blank">this Superuser post</a> for more information on <code>profile</code> and <code>rc</code> files.</li>
       </ol>
     </p>
   
-    <p>Once you've found the command(s) you'd like to create the aliases for and the proper place to put them, you can create an alias using the following syntax options (<a href="https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html" target="_blank" >taken from this site</a>):</p>
+    <p>Once you've found the command(s) you'd like to create the aliases for and the proper place to put them, you can create an alias using the following syntax options (<a href="https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html" target="_blank">taken from this site</a>):</p>
 
     <pre>
       alias name=value
@@ -103,8 +103,8 @@
 
       <ul>
         <li><code>alias ..='cd ..'</code> You can add on to this, for example <code>alias ...='cd ../..'</code></li>
-        <li><a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank" >From Sarah Drasner:</a> <code>alias gi='git add -A && git commit -m'</code>, which allows you to run <code>gi 'your commit message here'</code></li>
-        <li><a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank" >From Sarah Drasner:</a> <code>alias gr='grep --color -r'</code>, which searches recursively from your current folder and colorizes output, i.e. <code>gr 'assets'</code></li>
+        <li><a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank">From Sarah Drasner:</a> <code>alias gi='git add -A && git commit -m'</code>, which allows you to run <code>gi 'your commit message here'</code></li>
+        <li><a href="https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/" target="_blank">From Sarah Drasner:</a> <code>alias gr='grep --color -r'</code>, which searches recursively from your current folder and colorizes output, i.e. <code>gr 'assets'</code></li>
       </ul>
 
     </p>
@@ -118,7 +118,7 @@
       <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L5/index.html" target="_blank">Edit this page on Github</a>
       
       <div class="discord">
-        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank" >Questions? Ask on Discord! </a>  
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank">Questions? Ask on Discord! </a>  
       </div> 
     </div>
 </div>
