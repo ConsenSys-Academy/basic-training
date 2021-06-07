@@ -1,0 +1,12 @@
+{
+    "attr-name-style": false,
+    "attr-req-value": false,
+    "id-class-style": false,
+    "indent-style": "spaces",
+    "indent-width": 2,
+    "line-end-style": false,
+    "tag-bans": [],
+    "attr-bans": [],
+    "link-req-noopener": false,
+    "img-req-alt": false
+}
