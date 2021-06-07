@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=" />
-    <link rel="stylesheet" href="../../style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      async
-    ></script>
-    <script src="../../js/text-bounce.js" async></script>
-    <title>Command Line</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=" />
+  <link rel="stylesheet" href="../../style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Command Line</title>
+</head>
+
+<body>
+
   <div class="body">
     <!-- Title goes below: -->
     <h1>Advanced: Shell Frameworks</h1>
@@ -18,10 +19,8 @@
     <!-- Content here: -->
 
     <p>
-      <i
-        >This section, while open to all, is meant for advanced users. You do
-        not need to complete this lesson if you are new to the command line.</i
-      >
+      <i>This section, while open to all, is meant for advanced users. You do
+        not need to complete this lesson if you are new to the command line.</i>
     </p>
 
     <p>
@@ -45,40 +44,27 @@
 
     <p>
       In this lesson, we're going to go over a popular shell framework,
-      <a href="https://ohmyz.sh/" target="_blank" 
-        >Oh-My-Zsh</a
-      >, and a popular custom prompt,
-      <a
-        href="https://denysdovhan.com/spaceship-prompt/"
-        target="_blank"
-        >Spaceship</a
-      >. We'll then show you a few custom configurations for "vanilla" terminal
+      <a href="https://ohmyz.sh/" target="_blank">Oh-My-Zsh</a>, and a popular custom prompt,
+      <a href="https://denysdovhan.com/spaceship-prompt/" target="_blank">Spaceship</a>. We'll then show you a few
+      custom configurations for "vanilla" terminal
       setups, using real-life config files from software engineers.
     </p>
 
     <p>
-      <i
-        >Note: Oh-My-Zsh requires your terminal to be running <code>zsh</code>,
+      <i>Note: Oh-My-Zsh requires your terminal to be running <code>zsh</code>,
         which is not the native terminal language for Linux. However, you can
-        <a
-          href="https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/"
-          target="_blank"
-          >install zsh for Linux.</a
-        ></i
-      >
+        <a href="https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/" target="_blank">install
+          zsh for Linux.</a></i>
     </p>
 
     <h2>Oh-My-Zsh</h2>
 
     <p>
-      <a href="https://ohmyz.sh/" target="_blank" 
-        >From the Oh-My-Zsh website:</a
-      >
+      <a href="https://ohmyz.sh/" target="_blank">From the Oh-My-Zsh website:</a>
     </p>
 
     <blockquote>
-      <i
-        >Oh My Zsh is an open source, community-driven framework for managing
+      <i>Oh My Zsh is an open source, community-driven framework for managing
         your Zsh configuration. Oh My Zsh comes bundled with plugins [and
         themes], which allow you to take advantage of functionality of many
         sorts to your shell just by enabling them.
@@ -88,25 +74,16 @@
     <p>
       You can install Oh-My-Zsh from the terminal using <code>wget</code> or
       <code>curl</code>. Please see install instructions from their website
-      <a
-        href="https://ohmyz.sh/#install"
-        target="_blank"
-        >here</a
-      >
+      <a href="https://ohmyz.sh/#install" target="_blank">here</a>
       or use the following <code>curl</code> command:
     </p>
 
     <pre>
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</pre
-    >
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</pre>
 
     <p>
       If you'd like to learn more about Oh-My-Zsh, you can
-      <a
-        href="https://github.com/ohmyzsh/ohmyzsh/wiki"
-        target="_blank"
-        >read their documentation here.</a
-      >
+      <a href="https://github.com/ohmyzsh/ohmyzsh/wiki" target="_blank">read their documentation here.</a>
     </p>
 
     <p>
@@ -116,60 +93,34 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 
     <ul>
       <li>
-        <a
-          href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump"
-          target="_blank"
-          ><b>Autojump</b></a
-        >
+        <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump" target="_blank"><b>Autojump</b></a>
         "is a faster way to navigate your filesystem. It works by maintaining a
         database of the directories you use the most from the command line."
         Read more about autojump from its page
-        <a
-          href="https://github.com/wting/autojump"
-          target="_blank"
-          >here</a
-        >
+        <a href="https://github.com/wting/autojump" target="_blank">here</a>
         and find out to install it from its Oh-My-Zsh plugin page
-        <a
-          href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump"
-          target="_blank"
-          >here.</a
-        >
+        <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/autojump" target="_blank">here.</a>
       </li>
 
       <li>
-        <a
-          href="https://github.com/zsh-users/zsh-syntax-highlighting"
-          target="_blank"
-          ><b>Syntax Highlighting</b></a
-        >
+        <a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank"><b>Syntax Highlighting</b></a>
         is a way of differentiating commands from arguments and different
         variables on the command line. It's visually appealing but also helps
         catch errors. This plugin is not bundled with Oh-My-Zsh, but can be
         easily installed following
-        <a
-          href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o"
-          target="_blank"
-          >these instructions.</a
-        >
+        <a href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o"
+          target="_blank">these instructions.</a>
         Please note plugins are separated by whitespaces, not commas, when
         adding them to <code>/.zshrc</code>
       </li>
 
       <li>
-        <a
-          href="https://github.com/zsh-users/zsh-autosuggestions"
-          target="_blank"
-          ><b>Autosuggestions</b></a
-        >
+        <a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank"><b>Autosuggestions</b></a>
         "suggests commands as you type based on history and completions." See
         more information on their website here. This is also not bundled with
         Oh-My-Zsh. To install it,
-        <a
-          href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o"
-          target="_blank"
-          >follow these instructions.</a
-        >
+        <a href="https://hackernoon.com/customize-oh-my-zsh-with-syntax-highlighting-and-auto-suggestions-6q1b3w8o"
+          target="_blank">follow these instructions.</a>
         Please note plugins are separated by whitespaces, not commas, when
         adding them to <code>/.zshrc</code>
       </li>
@@ -177,11 +128,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 
     <p>
       Oh-My-Zsh also supports roughly 150 color themes natively. See
-      <a
-        href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes"
-        target="_blank"
-        >this page</a
-      >
+      <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank">this page</a>
       to find a theme you like. To choose a theme, follow these instructions
       from Oh-My-Zsh:
     </p>
@@ -198,11 +145,8 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
       Again, you might find Oh-My-Zsh overkill. That's totally okay! Regardless,
       you may get some aliasing or customization ideas from their plugins and
       themes. For example, check out their
-      <a
-        href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases"
-        target="_blank"
-        ><code>common-aliases</code> plugin.</a
-      >
+      <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases"
+        target="_blank"><code>common-aliases</code> plugin.</a>
     </p>
 
     <h2>Spaceship</h2>
@@ -210,11 +154,9 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
     <p>From the website:</p>
 
     <blockquote>
-      <i
-        >Spaceship is a minimalistic, powerful and extremely customizable Zsh
+      <i>Spaceship is a minimalistic, powerful and extremely customizable Zsh
         prompt. It combines everything you may need for convenient work, without
-        unnecessary complications, like a real spaceship.</i
-      >
+        unnecessary complications, like a real spaceship.</i>
     </blockquote>
 
 
@@ -227,35 +169,23 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 
     <div class="img-wrapper">
 
-      <img
-        src="../../img/spaceship.gif"
-        alt="screenshot animation of spaceship prompt"
-      />
-      
+      <img src="../../img/spaceship.gif" alt="screenshot animation of spaceship prompt" />
+
     </div>
 
     <p>
       Note that the above screenshot is running on
-      <a href="https://hyper.is/" target="_blank" 
-        >the Hyper terminal emulator</a
-      >
+      <a href="https://hyper.is/" target="_blank">the Hyper terminal emulator</a>
       with syntax highlighting and autocomplete plugins already installed.
       Spaceship will not look like this out of the box. Read more about
-      <a
-        href="https://denysdovhan.com/spaceship-prompt/docs/Troubleshooting.html#why-doesnt-my-prompt-look-like-the-preview"
-        target="_blank"
-        >the screenshots configuration here.</a
-      >
+      <a href="https://denysdovhan.com/spaceship-prompt/docs/Troubleshooting.html#why-doesnt-my-prompt-look-like-the-preview"
+        target="_blank">the screenshots configuration here.</a>
     </p>
 
     <p>
       Spaceship may run slow on directories that are git repositories with lots
       of unstaged changes. Read more about what Spaceship provides on
-      <a
-        href="https://denysdovhan.com/spaceship-prompt/"
-        target="_blank"
-        >their website.</a
-      >
+      <a href="https://denysdovhan.com/spaceship-prompt/" target="_blank">their website.</a>
     </p>
 
     <h2>Heavy Aliasing</h2>
@@ -277,18 +207,12 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
         <b>Extend and Save Your Session History</b> You may try to find your
         most common commands and realize your history only includes the current
         session. For <code>bash</code>,
-        <a
-          href="https://apple.stackexchange.com/questions/50649/how-to-make-bash-terminal-app-remember-history-of-previous-sessions"
-          target="_blank"
-          >use this SO answer</a
-        >
+        <a href="https://apple.stackexchange.com/questions/50649/how-to-make-bash-terminal-app-remember-history-of-previous-sessions"
+          target="_blank">use this SO answer</a>
         to configure your history and be sure to force a save in case following
         these instructions
-        <a
-          href="https://superuser.com/questions/20900/bash-history-loss-when-using-histappend"
-          target="_blank"
-          >here.</a
-        >
+        <a href="https://superuser.com/questions/20900/bash-history-loss-when-using-histappend"
+          target="_blank">here.</a>
         For <code>zsh</code>, you need to add a few lines to your
         <code>~/.zshrc</code> file:
         <pre>
@@ -306,8 +230,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
               #history file
               export HISTFILE=~/.zhistory
               # Add timestamp to history
-              export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "</pre
-        >
+              export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "</pre>
       </li>
       <li>
         You can remove the pesky "last login" line at the top of your
@@ -321,11 +244,8 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
       great icebreaker online is to ask engineers to share their favorite
       terminal aliases. Some might even be generous enough to share their config
       file! You can also look to
-      <a
-        href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases"
-        target="_blank"
-        >the <code>common-aliases</code> plugin</a
-      >
+      <a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases" target="_blank">the
+        <code>common-aliases</code> plugin</a>
       to get ideas (for <code>bash</code> as well!)
     </p>
 
@@ -334,61 +254,36 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
     <ul>
       <li>
         MIT CSAIL grad and prominent Rust Developer Jon Gjengset's
-        <a
-          href="https://www.youtube.com/watch?v=ycMiMDHopNc"
-          target="_blank"
-          >configuration setup walkthrough</a
-        >
+        <a href="https://www.youtube.com/watch?v=ycMiMDHopNc" target="_blank">configuration setup walkthrough</a>
       </li>
       <li>
-        <a
-          href="https://terminalsare.sexy/"
-          target="_blank"
-          >Terminals Are Sexy</a
-        >
-        "A curated list of Terminal frameworks, plugins & resources for CLI
+        <a href="https://terminalsare.sexy/" target="_blank">Terminals Are Sexy</a>
+        "A curated list of Terminal frameworks, plugins &amp; resources for CLI
         lovers."
       </li>
       <li>
-        <a
-          href="https://github.com/nvbn/thefuck"
-          target="_blank"
-          >The F*ck</a
-        >
+        <a href="https://github.com/nvbn/thefuck" target="_blank">The F*ck</a>
         "a magnificent app that corrects errors in previous console commands."
       </li>
       <li>
-        <a
-          href="https://github.com/agarrharr/awesome-cli-apps"
-          target="_blank"
-          >Awesome-CLI-Apps</a
-        >
+        <a href="https://github.com/agarrharr/awesome-cli-apps" target="_blank">Awesome-CLI-Apps</a>
         and
-        <a
-          href="https://github.com/alebcay/awesome-shell"
-          target="_blank"
-          >Awesome Shell</a
-        >
+        <a href="https://github.com/alebcay/awesome-shell" target="_blank">Awesome Shell</a>
       </li>
     </ul>
 
     <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
-      <a
-        href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L6/index.html"
-        target="_blank"
-        >Edit this page on Github</a
-      >
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M3/L6/index.html" target="_blank">Edit this
+        page on Github</a>
 
       <div class="discord">
-        <img
-          class="discord-logo"
-          src="../../img/discord.svg"
-          alt="Discord logo"
-        /><a href="https://discord.gg/FrHSjSn9dX" target="_blank"
-          >Questions? Ask on Discord!
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" /><a
+          href="https://discord.gg/FrHSjSn9dX" target="_blank">Questions? Ask on Discord!
         </a>
       </div>
     </div>
   </div>
+</body>
+
 </html>

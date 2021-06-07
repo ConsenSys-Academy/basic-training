@@ -1,96 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=">
   <link rel="stylesheet" href="../../style.css">
-  <script 
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" 
-  async
-  ></script>
-  <script 
-  src="../../js/text-bounce.js" 
-  async
-  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
   <title>Git</title>
 </head>
-<div class="body">
-  
-  <!-- Title goes below: -->
-  <h1>Making and Pushing Your First Git Repository</h1>
-  
-  <!-- Content here: -->
 
-    <p>In this section, we're going to walk through the entire process of setting up a fresh Git repository on your local machine, adding some files to it, committing those files and pushing the commits to a remote repository we've setup on Github. While it sounds simple, give yourself some time and leeway to work through the tutorial as it's the first proper one in the course. Don't be afraid to ask questions in the Discord if you need help (see the link at bottom of the page!).</p>
+<body>
+
+  <div class="body">
+
+    <!-- Title goes below: -->
+    <h1>Making and Pushing Your First Git Repository</h1>
+
+    <!-- Content here: -->
+
+    <p>In this section, we're going to walk through the entire process of setting up a fresh Git repository on your
+      local machine, adding some files to it, committing those files and pushing the commits to a remote repository
+      we've setup on Github. While it sounds simple, give yourself some time and leeway to work through the tutorial as
+      it's the first proper one in the course. Don't be afraid to ask questions in the Discord if you need help (see the
+      link at bottom of the page!).</p>
 
     <h2>Create a New Repository on Github</h2>
-      <p>Before we create our repository on our machine, we want to create a place for it on Github. Make sure you're signed into Github and go to <a href="https://github.com/new" target="_blank">this link</a> to create a new repository. You should see something similar to below:</p>
+    <p>Before we create our repository on our machine, we want to create a place for it on Github. Make sure you're
+      signed into Github and go to <a href="https://github.com/new" target="_blank">this link</a> to create a new
+      repository. You should see something similar to below:</p>
 
-      <div class="img-wrapper"><img src="../../img/git-tutorial-1.png" alt="screenshot of the Github new repository page"></div>
+    <div class="img-wrapper"><img src="../../img/git-tutorial-1.png" alt="screenshot of the Github new repository page">
+    </div>
 
-      <p>Under "Repository Template" choose "No Template", like in the image above. Think up a name for your Git project and type it in the box labeled "Repository Name", which is also circled in red in the image above.</p>
+    <p>Under "Repository Template" choose "No Template", like in the image above. Think up a name for your Git project
+      and type it in the box labeled "Repository Name", which is also circled in red in the image above.</p>
 
-      <p>Don't select any more options and scroll to the bottom of the screen. Click the green button labeled "Create Repository." If all is successful, you should see something similar to the image below:</p>
+    <p>Don't select any more options and scroll to the bottom of the screen. Click the green button labeled "Create
+      Repository." If all is successful, you should see something similar to the image below:</p>
 
-      <img src="../../img/git-tutorial-2.png" alt="screenshot of new Github repository page">
+    <img src="../../img/git-tutorial-2.png" alt="screenshot of new Github repository page">
 
-      <p>Be sure to copy the address for the Github repository, a URL that will end in <code>.git</code>. You can copy it by clicking the clipboard next to it, circled in red in the image above. Save the URL somewhere you can access it later.</p>
+    <p>Be sure to copy the address for the Github repository, a URL that will end in <code>.git</code>. You can copy it
+      by clicking the clipboard next to it, circled in red in the image above. Save the URL somewhere you can access it
+      later.</p>
 
     <h2>Make a Directory</h2>
-      <p>From your command line, create a directory with the same name as the repository you just created in Github. We can do this by running the command <code>$ mkdir directoryname</code>, where <code>directoryname</code> is the same name as the Github repository. This will create another directory in the current directory you're in. Once you've made the directory, navigate into the directory by running <code>$ cd directoryname</code>. You're on your way!</p>
+    <p>From your command line, create a directory with the same name as the repository you just created in Github. We
+      can do this by running the command <code>$ mkdir directoryname</code>, where <code>directoryname</code> is the
+      same name as the Github repository. This will create another directory in the current directory you're in. Once
+      you've made the directory, navigate into the directory by running <code>$ cd directoryname</code>. You're on your
+      way!</p>
 
     <h2>Init</h2>
-      <p>Once you're in the directory, please run <code>$ git init</code>. This will add the <code>.git</code> file (hidden by default) which transforms your plain old directory into a Git repository!</p>
+    <p>Once you're in the directory, please run <code>$ git init</code>. This will add the <code>.git</code> file
+      (hidden by default) which transforms your plain old directory into a Git repository!</p>
 
     <h2>Create a File</h2>
-      <p>Using the control flow we learned in the command line section, we're going to create a simple file in our Git repository. Run the following command and see if you can guess what it's doing before reading on:</p>
+    <p>Using the control flow we learned in the command line section, we're going to create a simple file in our Git
+      repository. Run the following command and see if you can guess what it's doing before reading on:</p>
 
-      <pre>$ echo "# my first git repo" >> README.md</pre>
+    <pre>$ echo "# my first git repo" &gt;&gt; README.md</pre>
 
-      <p>This command puts the characters in the quotes into the file <code>README.md</code>. Since that file doesn't exist, our command line creates it.</p>
+    <p>This command puts the characters in the quotes into the file <code>README.md</code>. Since that file doesn't
+      exist, our command line creates it.</p>
 
     <h2>Add File</h2>
-      <p>Git requires a two-stage process to actually make a commit. The first is to "stage" the changes you wish to add to the commit. We'll do that step now. First, run the command <code>$ git status</code> to see that your README.md file is unstaged. Run the command <code>$ git add README.md</code>. You won't see any activity from the terminal except a new prompt line. But if you run <code>$ git status</code> again, you'll see that now your <code>README.md</code> file is "staged" for a commit.</p>
+    <p>Git requires a two-stage process to actually make a commit. The first is to "stage" the changes you wish to add
+      to the commit. We'll do that step now. First, run the command <code>$ git status</code> to see that your README.md
+      file is unstaged. Run the command <code>$ git add README.md</code>. You won't see any activity from the terminal
+      except a new prompt line. But if you run <code>$ git status</code> again, you'll see that now your
+      <code>README.md</code> file is "staged" for a commit.</p>
 
     <h2>Commit</h2>
-      <p>Committing is scary, but this is an easy first one! The syntax for a Git commit is <code>git commit -m "YOUR COMMIT MESSAGE HERE"</code>. The commit message is meant to be short (about 50 characters) but descriptive about the changes the commit will make when applied to the repository. If you're having trouble writing a short commit message, you may be committing too many changes at once (<a href="https://chris.beams.io/posts/git-commit/#limit-50" target="_blank">source</a>).</p>
+    <p>Committing is scary, but this is an easy first one! The syntax for a Git commit is
+      <code>git commit -m "YOUR COMMIT MESSAGE HERE"</code>. The commit message is meant to be short (about 50
+      characters) but descriptive about the changes the commit will make when applied to the repository. If you're
+      having trouble writing a short commit message, you may be committing too many changes at once (<a
+        href="https://chris.beams.io/posts/git-commit/#limit-50" target="_blank">source</a>).</p>
 
-      <p>The first commit message is easy. You can say something like, "makes my first commit" or even "first commit". As you go on with a project, you want to make them a bit more descriptive. This way, if you have to roll back your repository for some reason, you can glance at the commit messages to get a sense of how far back you need to go.</p>
+    <p>The first commit message is easy. You can say something like, "makes my first commit" or even "first commit". As
+      you go on with a project, you want to make them a bit more descriptive. This way, if you have to roll back your
+      repository for some reason, you can glance at the commit messages to get a sense of how far back you need to go.
+    </p>
 
-      <p>Make your first commit for this repository by running the command <code>$ git commit -m "YOUR COMMIT MESSAGE HERE"</code></p>
+    <p>Make your first commit for this repository by running the command
+      <code>$ git commit -m "YOUR COMMIT MESSAGE HERE"</code></p>
 
     <h2>Name Your Branch</h2>
-      <p>The syntax for naming (or renaming) your branch in git is <code>git branch -m YOUR-BRANCH-NAME</code>. Let's go ahead and name our branch <code>main</code> by running <code>$ git branch -m main</code>. If we create a repository in Github, the website will name the first branch <code>main</code> by default.</p>
+    <p>The syntax for naming (or renaming) your branch in git is <code>git branch -m YOUR-BRANCH-NAME</code>. Let's go
+      ahead and name our branch <code>main</code> by running <code>$ git branch -m main</code>. If we create a
+      repository in Github, the website will name the first branch <code>main</code> by default.</p>
 
     <h2>Add Remote Address</h2>
-      <p>As we mentioned in the first section, typically a Git repository will have a central or common repository all the contributors push to or pull from. This repository is called the <b>remote</b> repository. For our tutorial, the remote repository is the one we setup on Github in the first step. Be sure to have its address (ending in <code>.git</code>) nearby as we're about to need it.</p>
+    <p>As we mentioned in the first section, typically a Git repository will have a central or common repository all the
+      contributors push to or pull from. This repository is called the <b>remote</b> repository. For our tutorial, the
+      remote repository is the one we setup on Github in the first step. Be sure to have its address (ending in
+      <code>.git</code>) nearby as we're about to need it.</p>
 
-      <p>We need to tell Git which remote repository we'd like to follow. This is where we will push our commits and pull any commits made by others. We can add a remote repository with the following command:</p>
+    <p>We need to tell Git which remote repository we'd like to follow. This is where we will push our commits and pull
+      any commits made by others. We can add a remote repository with the following command:</p>
 
-      <pre>$ git remote add origin YOUR_GITHUB_URL_ENDING_IN.git</pre>
+    <pre>$ git remote add origin YOUR_GITHUB_URL_ENDING_IN.git</pre>
 
-      <p>We won't cover what <code>origin</code> means, as it's a bit complicated, but it's essentially what we're naming our remote repository. If you'd like to learn about origin and remote you can read <a href="https://stackoverflow.com/questions/38837705/what-is-the-difference-between-origin-and-remote-in-git-commands" target="_blank">this Stack Overflow answer here.</a></p>
+    <p>We won't cover what <code>origin</code> means, as it's a bit complicated, but it's essentially what we're naming
+      our remote repository. If you'd like to learn about origin and remote you can read <a
+        href="https://stackoverflow.com/questions/38837705/what-is-the-difference-between-origin-and-remote-in-git-commands"
+        target="_blank">this Stack Overflow answer here.</a></p>
 
     <h2>Push</h2>
 
-    <p>Now, the moment of truth! If you've setup your credentials properly in the last module, you will be able to push your commit to the remote Github repository with the following command:</p>
+    <p>Now, the moment of truth! If you've setup your credentials properly in the last module, you will be able to push
+      your commit to the remote Github repository with the following command:</p>
 
     <pre>$ git push -u origin main</pre>
 
-    <p>This will push our commit to the remote repository (named <code>origin</code>), specifically to its branch <code>main</code>. To check if you were successful, refresh the Github repository page you setup in the first step. You should see your README file!</p>
+    <p>This will push our commit to the remote repository (named <code>origin</code>), specifically to its branch
+      <code>main</code>. To check if you were successful, refresh the Github repository page you setup in the first
+      step. You should see your README file!</p>
 
-    <p>Git is an incredibly powerful language but also simple for every day use. It's not unusual for developers to have to look up Git commands, especially if it's out of the ordinary <code>git clone</code>, <code>git commit</code>, <code>git push</code>, <code>git pull</code>, etc. We'll go over some resources for that in an upcoming section.</p>
+    <p>Git is an incredibly powerful language but also simple for every day use. It's not unusual for developers to have
+      to look up Git commands, especially if it's out of the ordinary <code>git clone</code>, <code>git commit</code>,
+      <code>git push</code>, <code>git pull</code>, etc. We'll go over some resources for that in an upcoming section.
+    </p>
 
 
 
-  <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
+    <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
-      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M5/L3/index.html" target="_blank">Edit this page on Github</a>
-      
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M5/L3/index.html" target="_blank">Edit this
+        page on Github</a>
+
       <div class="discord">
-        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" ><a href="https://discord.gg/FrHSjSn9dX" target="_blank">Questions? Ask on Discord! </a>  
-      </div> 
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo"><a href="https://discord.gg/FrHSjSn9dX"
+          target="_blank">Questions? Ask on Discord! </a>
+      </div>
     </div>
-</div>
+  </div>
+</body>
 
 </html>

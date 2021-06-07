@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=" />
-    <link rel="stylesheet" href="../../style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      async
-    ></script>
-    <script src="../../js/text-bounce.js" async></script>
-    <title>Git</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=" />
+  <link rel="stylesheet" href="../../style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" async></script>
+  <script src="../../js/text-bounce.js" async></script>
+  <title>Git</title>
+</head>
+
+<body>
+
   <div class="body">
     <!-- Title goes below: -->
     <h1>What is Git?</h1>
 
     <!-- Content here: -->
-    
+
     <p>
       <a href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a> is a
-      <a href="https://en.wikipedia.org/wiki/Version_control" target="_blank"
-        >version-control system (VCS)</a
-      >
+      <a href="https://en.wikipedia.org/wiki/Version_control" target="_blank">version-control system (VCS)</a>
       used to track changes made to projects. While Git seems simple, it's
       actually a bit challenging to get comfortable with. (Note that Git is a
       piece of software, on which version control sites like Github, Gitlab and
@@ -33,11 +32,8 @@
       Git was developed to allow multiple people to work on a project
       simultaneously without problems or complications. It was originally
       authored by
-      <a
-        href="https://web.archive.org/web/20151116175401/https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290"
-        target="_blank"
-        >Linus Torvalds</a
-      >, creating of Linux, as a way to manage all the contributors to the Linux
+      <a href="https://web.archive.org/web/20151116175401/https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290"
+        target="_blank">Linus Torvalds</a>, creating of Linux, as a way to manage all the contributors to the Linux
       kernel.
     </p>
 
@@ -62,11 +58,8 @@
     <h3>Common Git Terms</h3>
     <ul>
       <li>
-        <a
-          href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories"
-          target="_blank"
-          ><b>Repository</b></a
-        >
+        <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories"
+          target="_blank"><b>Repository</b></a>
         A Git repository holds all the files for your Git project as well as a
         history of all changes made to that project, starting from its creation.
         It is the basic unit of Git: all other actions are defined by how they
@@ -75,11 +68,8 @@
         Repository is frequently shortened to "repo".
       </li>
       <li>
-        <a
-          href="https://docs.github.com/en/github/committing-changes-to-your-project/about-commits"
-          target="_blank"
-          ><b></b>Commits</a
-        >
+        <a href="https://docs.github.com/en/github/committing-changes-to-your-project/about-commits"
+          target="_blank"><b></b>Commits</a>
         In Git, commits signfies changes to a Git repository. It's similar to
         the "save" function on your computer. It takes a current snapshot of all
         the changes and creates a checkpoint. A Git commit includes:
@@ -96,11 +86,7 @@
         certain amount of work accomplished.
       </li>
       <li>
-        <a
-          href="https://www.git-tower.com/learn/git/glossary/remote"
-          target="_blank"
-          ><b>Remote</b></a
-        >
+        <a href="https://www.git-tower.com/learn/git/glossary/remote" target="_blank"><b>Remote</b></a>
         Even though Git specializes in being a
         <i>distributed</i> version-control system, there is typically a central,
         common repository that all folks working on a project agree to keep
@@ -110,19 +96,9 @@
         this repository the remote repository.
       </li>
       <li>
-        <b
-          ><a
-            href="https://www.atlassian.com/git/tutorials/syncing/git-push"
-            target="_blank"
-            >Push</a
-          ></b
-        >
+        <b><a href="https://www.atlassian.com/git/tutorials/syncing/git-push" target="_blank">Push</a></b>
         /
-        <a
-          href="https://www.atlassian.com/git/tutorials/syncing/git-pull"
-          target="_blank"
-          ><b>Pull</b></a
-        >
+        <a href="https://www.atlassian.com/git/tutorials/syncing/git-pull" target="_blank"><b>Pull</b></a>
         The process of updating the central, or <b>remote</b>, repository with
         your commits is knowing as <b>pushing</b> your commits. Conversely, when
         you want to get the commits other folks have pushed to the remote
@@ -132,46 +108,27 @@
         downloading others commits to the remote repository.
       </li>
       <li>
-        <a
-          href="https://www.atlassian.com/git/tutorials/using-branches"
-          target="_blank"
-          ><b>Branch</b></a
-        >
+        <a href="https://www.atlassian.com/git/tutorials/using-branches" target="_blank"><b>Branch</b></a>
         A branch is an independent line of commits (changes) on a repository.
         Branches are usually created when you're conducting long-term
         development, such as building a major feature or upgrade or fixing a
         major bug.
       </li>
       <li>
-        <a
-          href="https://www.javatpoint.com/git-origin-master"
-          target="_blank"
-          ><b>Main</b></a
-        >
+        <a href="https://www.javatpoint.com/git-origin-master" target="_blank"><b>Main</b></a>
         is the default branch for development in a repository. It was previously
         called "master" but
-        <a
-          href="https://sfconservancy.org/news/2020/jun/23/gitbranchname/"
-          target="_blank"
-          >renamed in 2020.</a
-        >
+        <a href="https://sfconservancy.org/news/2020/jun/23/gitbranchname/" target="_blank">renamed in 2020.</a>
       </li>
       <li>
-        <a
-          href="https://www.atlassian.com/git/tutorials/using-branches/git-merge"
-          target="_blank"
-          ><b>Merge</b></a
-        >
+        <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" target="_blank"><b>Merge</b></a>
         is combining of two separate branches of development. It joins together
         not only the files in the codebases, but also the commit history of the
         two separate branches.
       </li>
       <li>
-        <a
-          href="https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b"
-          target="_blank"
-          ><b>Rolling Back a Commit</b></a
-        >
+        <a href="https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b" target="_blank"><b>Rolling Back a
+            Commit</b></a>
         Git allows you to develop without worries because you can't ever truly
         break code. If something breaks with a commit you've done, you can
         simply "roll back" the branch to before the offending commit. This is
@@ -179,11 +136,8 @@
         a previous commit.
       </li>
       <li>
-        <a
-          href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"
-          target="_blank"
-          ><b>Clone</b></a
-        >
+        <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"
+          target="_blank"><b>Clone</b></a>
         Cloning is the act of copying a desired repository to your computer.
         It's a quick way to download an entire project. Note that
         <code>git clone</code> will only copy the repository, you still have to
@@ -191,11 +145,8 @@
         line.
       </li>
       <li>
-        <a
-          href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
-          target="_blank"
-          ><b>Pull Request</b></a
-        >
+        <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+          target="_blank"><b>Pull Request</b></a>
         A pull request is when a contributor asks to merge a branch of
         development with another branch. This involves the maintainers of the
         second branch to review and comment on the contributor's code.
@@ -211,21 +162,16 @@
 
     <!-- Be sure to alter the link below to add in correct Module and Lesson Number  -->
     <div class="footer">
-      <a
-        href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M5/L1/index.html"
-        target="_blank"
-        >Edit this page on Github</a
-      >
+      <a href="https://github.com/ConsenSys-Academy/basic-training/edit/main/M5/L1/index.html" target="_blank">Edit this
+        page on Github</a>
 
       <div class="discord">
-        <img
-          class="discord-logo"
-          src="../../img/discord.svg"
-          alt="Discord logo"
-        /><a href="https://discord.gg/FrHSjSn9dX" target="_blank"
-          >Questions? Ask on Discord!
+        <img class="discord-logo" src="../../img/discord.svg" alt="Discord logo" /><a
+          href="https://discord.gg/FrHSjSn9dX" target="_blank">Questions? Ask on Discord!
         </a>
       </div>
     </div>
   </div>
+</body>
+
 </html>
