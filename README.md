@@ -6,11 +6,8 @@
 **[Purpose](#Purpose)**<br>
 **[Fundamentals](#Fundamentals)**<br>
 **[What's in it for me?](#What's-in-it-for-me?)**<br>
-**[Installation Instructions](#Introduction)**<br>
-**[Installation Instructions](#Introduction)**<br>
-
-- [Course Outline](##Course-Outline)
-- [Contributing](##Additions-and-Contributions)
+**[Course Outline](#Course-Outline)**<br>
+**[Additions and Contributions](#Additions-&-Contributions)**<br>
 
 ## Introduction
 
@@ -18,8 +15,11 @@ First, please give this repo a star ⭐️!
 
 If you are interested in Ethereum development, be sure to have a look at our DevPortal and other course offerings.
 
-- [dev portal](https://consensys.net/developers/)
-- [course offerings](https://consensys.net/academy/)
+- <a href="https://consensys.net/developers/" target="_blank">Dev Portal</a>
+- <a href="https://consensys.net/academy/" target="_blank">Course Offerings</a>
+
+- [dev portal](https://consensys.net/developers/){:target="\_blank"}
+- [course offerings](https://consensys.net/academy/){:target="\_blank"}
 
 ### Purpose
 
@@ -58,8 +58,7 @@ We want to help ensure you have not only the tools, but the fundamental knowledg
 In this mini-course, we will go through:
 
 - Unix / Linux Operating Systems <img src = "img/readme/linux.png" width="20">
-
-- Command Line <img src = "img/readme/cl.png" width="20">
+- Command Line <img src = "img/readme/cline.png" width="20">
 - Code Editor <img src = "img/readme/vsCode.png" width="20">
 - Git <img src = "img/readme/git.png" width="20">
 - Javascript / Node / Web Frameworks <img src = "img/readme/js.png" width="20">
@@ -70,7 +69,7 @@ If you never left the mini-course, after completing it, you'll be able to find y
 
 Now, let's take a deep breath, relax, and learn the way.
 
-## Additions and Contributions
+## Additions & Contributions
 
 This course will grow over time. Contributions are HIGHLY encouraged and desired. If you see an error, please open an issue and submit a pull request.
 
