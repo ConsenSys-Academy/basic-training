@@ -57,7 +57,9 @@ We want to help ensure you have not only the tools, but the fundamental knowledg
 
 In this mini-course, we will go through:
 
-- Unix / Linux Operating Systems ![code img](./img/linux.png)
+- Unix / Linux Operating Systems
+  ![code img](./img/linux.png)
+  <img src = "img/linux.png" width="50">
 
 - Command Line
 - Code Editor
