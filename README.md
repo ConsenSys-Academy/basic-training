@@ -23,7 +23,7 @@ If you are interested in Ethereum development, be sure to have a look at our Dev
 
 ### Purpose
 
-![code img](./img/codeImg.png)
+![code img](./img/readme/codeImg.png)
 
 This course aims to teach software developers the best practices for using fundamental software development tools.
 
@@ -53,14 +53,14 @@ We want to help ensure you have not only the tools, but the fundamental knowledg
 
 ## Course Outline
 
-![code img](./img/laptop.png)
+![code img](./img/readme/laptop.png)
 
 In this mini-course, we will go through:
 
-- Unix / Linux Operating Systems <img src = "img/linux.png" width="20">
+- Unix / Linux Operating Systems <img src = "img/readme/linux.png" width="20">
 
-- Command Line
-- Code Editor
+- Command Line <img src = "img/readme/cl.png" width="20">
+- Code Editor <img src = "img/readme/vsCode.png" width="20">
 - Git
 - Javascript / Node / Web Frameworks
 
@@ -79,7 +79,7 @@ We envision this course to grow over time—sections on "contributing to open so
 Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for how to make a contribution.
 
 An example of this process found below:
-Found in the top right of the repository information ![fork location](./img/fork.png)
+Found in the top right of the repository information ![fork location](./img/readme/fork.png)
 
 1. Fork it (<https://github.com/ConsenSys-Academy/basic-training>)
 2. Create your feature branch (`git checkout -b branchName`)
