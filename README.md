@@ -1,6 +1,14 @@
 # Basic Training
 
-## Intro
+## Table of contents
+
+- [Introduction](#intoduction)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Course Outline](#Course-Outline)
+- [Contributing](#Additions-and-Contributions)
+
+## Introduction
 
 First, please give this repo a star ⭐️!
 
@@ -32,7 +40,7 @@ If you're staring at a code editor for hours, shouldn't it be tricked out in the
 
 Even if you're very familiar with the technology in these lessons, we encourage you to flip through them. Along with introductory material, we've curated tips and tricks for optimizing and improving your use of these tools.
 
-## A Few Things
+## Course Outline
 
 In this mini-course, we will go through:
 
@@ -55,5 +63,14 @@ This course will grow over time. Contributions are HIGHLY encouraged and desired
 We envision this course to grow over time—sections on "contributing to open source" would be helpful. Should you have an idea, please open an issue and discuss it with the team. Pull requests are highly appreciated.
 
 Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for how to make a contribution.
+
+An example of this process found below:
+Found in the top right of the repository information ![fork location](./img/fork.png)
+
+1. Fork it (<https://github.com/ConsenSys-Academy/basic-training>)
+2. Create your feature branch (`git checkout -b branchName`)
+3. Commit your changes (`git commit -m 'Added X input'`)
+4. Push to the branch (`git push origin branchName`)
+5. Create a new Pull Request
 
 Made with ♥️ by [ConsenSys](https://consensys.net/).
