@@ -4,13 +4,11 @@
 
 **[Introduction](#Introduction)**<br>
 **[Purpose](#Purpose)**<br>
-**[Installation Instructions](#Introduction)**<br>
-**[Installation Instructions](#Introduction)**<br>
+**[Fundamentals](#Fundamentals)**<br>
+**[What's in it for me?](#What's-in-it-for-me?)**<br>
 **[Installation Instructions](#Introduction)**<br>
 **[Installation Instructions](#Introduction)**<br>
 
-- [Purpose](##Purpose)
-- [Setup](##setup)
 - [Course Outline](##Course-Outline)
 - [Contributing](##Additions-and-Contributions)
 
@@ -18,17 +16,22 @@
 
 First, please give this repo a star ⭐️!
 
-If you are interested in Ethereum development, check out our [dev portal](https://consensys.net/developers/) and other [course offerings](https://consensys.net/academy/).
+If you are interested in Ethereum development, be sure to have a look at our DevPortal and other course offerings.
 
-## Purpose
+- [dev portal](https://consensys.net/developers/)
+- [course offerings](https://consensys.net/academy/)
 
-![code img](./img/code1.png)
+### Purpose
+
+![code img](./img/codeImg.png)
 
 This course aims to teach software developers the best practices for using fundamental software development tools.
 
 It is aimed at new learners and intermediate software engineers. This course is helpful for general software engineering and for those wishing to enter blockchain development.
 
-## Why
+This is to help showcase the tools a developer has at their fingertips and show you some tips and tricks along the way.
+
+### Fundamentals
 
 It's the little things that count. In a professional software developer's life, these tools are like air: ever-present, all-encompassing, and direly needed. To be at our best, we need to learn how to utilize these properly.
 
@@ -42,9 +45,13 @@ We hope to pre-emptively help with many of the issues we've seen people struggle
 
 ## What's in it for me?
 
+![code img](./img/laptop.png)
+
 If you're staring at a code editor for hours, shouldn't it be tricked out in the best way possible? What you learn here could make your developer experience not only more efficient but fun!
 
 Even if you're very familiar with the technology in these lessons, we encourage you to flip through them. Along with introductory material, we've curated tips and tricks for optimizing and improving your use of these tools.
+
+We want to help ensure you have not only the tools, but the fundamental knowledge on how to make them work for you as you develop your preferences.
 
 ## Course Outline
 
