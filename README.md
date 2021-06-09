@@ -16,7 +16,7 @@ If you are interested in Ethereum development, check out our [dev portal](https:
 
 ## Who
 
-![Shiba le dev](./img/shiba-dev.gif)
+![code img](./img/code1.png)
 
 This course aims to teach software developers the best practices for using fundamental software development tools.
 
