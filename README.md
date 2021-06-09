@@ -1,6 +1,8 @@
 # Basic Training
 
-## Table of contents
+### Table of Contents
+
+**[Installation Instructions](#Introduction)**<br>
 
 - [Introduction](##Intoduction)
 - [Purpose](##Purpose)
