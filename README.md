@@ -61,8 +61,8 @@ In this mini-course, we will go through:
 
 - Command Line <img src = "img/readme/cl.png" width="20">
 - Code Editor <img src = "img/readme/vsCode.png" width="20">
-- Git
-- Javascript / Node / Web Frameworks
+- Git <img src = "img/readme/git.png" width="20">
+- Javascript / Node / Web Frameworks <img src = "img/readme/js.png" width="20">
 
 We will provide some material in these lessons, but we'll mainly provide links to other places where you can learn more.
 
