@@ -2,11 +2,11 @@
 
 ## Table of contents
 
-- [Introduction](#intoduction)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Course Outline](#Course-Outline)
-- [Contributing](#Additions-and-Contributions)
+- [Introduction](##Intoduction)
+- [Purpose](##Purpose)
+- [Setup](##setup)
+- [Course Outline](##Course-Outline)
+- [Contributing](##Additions-and-Contributions)
 
 ## Introduction
 
@@ -14,7 +14,7 @@ First, please give this repo a star ⭐️!
 
 If you are interested in Ethereum development, check out our [dev portal](https://consensys.net/developers/) and other [course offerings](https://consensys.net/academy/).
 
-## Who
+## Purpose
 
 ![code img](./img/code1.png)
 
