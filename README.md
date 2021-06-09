@@ -45,8 +45,6 @@ We hope to pre-emptively help with many of the issues we've seen people struggle
 
 ## What's in it for me?
 
-![code img](./img/laptop.png)
-
 If you're staring at a code editor for hours, shouldn't it be tricked out in the best way possible? What you learn here could make your developer experience not only more efficient but fun!
 
 Even if you're very familiar with the technology in these lessons, we encourage you to flip through them. Along with introductory material, we've curated tips and tricks for optimizing and improving your use of these tools.
@@ -55,9 +53,12 @@ We want to help ensure you have not only the tools, but the fundamental knowledg
 
 ## Course Outline
 
+![code img](./img/laptop.png)
+
 In this mini-course, we will go through:
 
-- Unix / Linux Operating Systems
+- Unix / Linux Operating Systems ![code img](./img/linux.png)
+
 - Command Line
 - Code Editor
 - Git
