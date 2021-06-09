@@ -2,9 +2,13 @@
 
 ### Table of Contents
 
+**[Introduction](#Introduction)**<br>
+**[Purpose](#Purpose)**<br>
+**[Installation Instructions](#Introduction)**<br>
+**[Installation Instructions](#Introduction)**<br>
+**[Installation Instructions](#Introduction)**<br>
 **[Installation Instructions](#Introduction)**<br>
 
-- [Introduction](##Intoduction)
 - [Purpose](##Purpose)
 - [Setup](##setup)
 - [Course Outline](##Course-Outline)
