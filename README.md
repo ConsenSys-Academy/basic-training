@@ -5,9 +5,9 @@
 **[Introduction](#Introduction)**<br>
 **[Purpose](#Purpose)**<br>
 **[Fundamentals](#Fundamentals)**<br>
-**[What's in it for me?](#What's-in-it-for-me?)**<br>
+**[Tool Bag](#Tool-Bag)**<br>
 **[Course Outline](#Course-Outline)**<br>
-**[Additions and Contributions](#Additions-&-Contributions)**<br>
+**[Contributions](#Contributions)**<br>
 
 ## Introduction
 
@@ -30,7 +30,7 @@ It is aimed at new learners and intermediate software engineers. This course is 
 
 This course helps showcase the tools a developer has at their fingertips and will show you some tips and tricks along the way.
 
-### Fundamentals
+## Fundamentals
 
 It's the little things that count. In a professional software developer's life, these tools are like air: ever-present, all-encompassing, and direly needed. To be at our best, we need to learn how to utilize these properly.
 
@@ -43,7 +43,7 @@ Learning these tools is similar to learning how to breathe properly. It seems fo
 
 We hope to pre-emptively help with many of the issues we've seen people struggle with over the years.
 
-## What's in it for me?
+## Tool Bag
 
 If you're staring at a code editor for hours on end, shouldn't it be tricked out in the best way possible? What you learn here could make your developer experience not only more efficient but fun!
 
@@ -51,7 +51,7 @@ Even if you're very familiar with the technology in these lessons, we encourage 
 
 We want to help ensure you not only have the tools, but the fundamental knowledge on how to make them work for you, espcially as you start to develop your workflow & preferences.
 
-### Course Outline
+## Course Outline
 
 <p align="center">
 <img src = "img/readme/laptop.png">
@@ -71,7 +71,7 @@ If you never left the mini-course, after completing it, you'll be able to find y
 
 Now, let's take a deep breath, relax, and learn the way.
 
-### Additions & Contributions
+## Contributions
 
 This course will grow over time. Contributions are HIGHLY encouraged and desired. If you see an error, please open an issue and submit a pull request.
 
