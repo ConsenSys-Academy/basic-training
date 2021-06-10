@@ -15,11 +15,8 @@ First, please give this repo a star ⭐️!
 
 If you are interested in Ethereum development, be sure to have a look at our DevPortal and other course offerings.
 
-- <a href="https://consensys.net/developers/" target="_blank">Dev Portal</a>
-- <a href="https://consensys.net/academy/" target="_blank">Course Offerings</a>
-
-- [dev portal](https://consensys.net/developers/){:target="\_blank"}
-- [course offerings](https://consensys.net/academy/){:target="\_blank"}
+- [Dev Portal](https://consensys.net/developers/)
+- [Course Offerings](https://consensys.net/academy/)
 
 ### Purpose
 
@@ -27,9 +24,9 @@ If you are interested in Ethereum development, be sure to have a look at our Dev
 
 This course aims to teach software developers the best practices for using fundamental software development tools.
 
-It is aimed at new learners and intermediate software engineers. This course is helpful for general software engineering and for those wishing to enter blockchain development.
+It is aimed at new learners and intermediate software engineers. This course is helpful for general software engineering and for those wishing to enter blockchain development. Prior to digging into Web3 development, having a firm grasp on some of the core tools you'll use throughout your projects will better equip you for sucess.
 
-This is to help showcase the tools a developer has at their fingertips and show you some tips and tricks along the way.
+This course helps showcase the tools a developer has at their fingertips and show you some tips and tricks along the way.
 
 ### Fundamentals
 
@@ -51,7 +48,7 @@ Even if you're very familiar with the technology in these lessons, we encourage 
 
 We want to help ensure you have not only the tools, but the fundamental knowledge on how to make them work for you as you develop your preferences.
 
-## Course Outline
+### Course Outline
 
 ![code img](./img/readme/laptop.png)
 
@@ -69,7 +66,7 @@ If you never left the mini-course, after completing it, you'll be able to find y
 
 Now, let's take a deep breath, relax, and learn the way.
 
-## Additions & Contributions
+### Additions & Contributions
 
 This course will grow over time. Contributions are HIGHLY encouraged and desired. If you see an error, please open an issue and submit a pull request.
 
@@ -86,4 +83,6 @@ Found in the top right of the repository information ![fork location](./img/read
 4. Push to the branch (`git push origin branchName`)
 5. Create a new Pull Request
 
-Made with ♥️ by [ConsenSys](https://consensys.net/).
+### Made with ♥️
+
+by [ConsenSys](https://consensys.net/).
