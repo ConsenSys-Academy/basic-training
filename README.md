@@ -20,6 +20,9 @@ If you are interested in Ethereum development, be sure to have a look at our Dev
 
 ### Purpose
 
+<p align="center">
+<img src = "img/readme/codeImg.png">
+</p>
 ![code img](./img/readme/codeImg.png)
 
 This course aims to teach software developers the best practices for using fundamental software development tools.
