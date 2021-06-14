@@ -34,7 +34,8 @@ This course helps showcase the tools a developer has at their fingertips and wil
 
 It's the little things that count. In a professional software developer's life, these tools are like air: ever-present, all-encompassing, and direly needed. To be at our best, we need to learn how to utilize these properly.
 
-We belive being a developer means you're a a forever student. New versions, syntax, tools,and documention constatly roll out, only learning the minimun in order to achieve X may be a slippery slope.
+We believe being a developer means you're a forever student. New versions, syntax, tools, and documentation constantly roll out, only learning the minimum in order to achieve X may be a slippery slope.
+
 Too often, we are taught what is "good enough" to accomplish the job, but not necessarily the best practices. This results in compounding bad practices, resulting in wasted time and unnecessary agony.
 
 We built this mini-course to give a place to learn these fundamental tools in a deliberate, focused way. This came from our experience of seeing many people signing up for our [Blockchain Frontend Bootcamp](https://consensys.net/academy/bootcamp/) and having to learn the fundamentals, frontend development, and blockchain skills.
@@ -65,7 +66,7 @@ In this mini-course, we will go through:
 - Git <img src = "img/readme/git.png" width="20">
 - Javascript / Node / Web Frameworks <img src = "img/readme/js.png" width="20">
 
-We will provide some material in these lessons, but we'll mainly provide links to other places where you can learn more. There are a number of fantastic resources we point you towards and similarly to being a dev, exploring the links and documentation will help solidity your knowledge.
+We will provide some material in these lessons, but we'll mainly provide links to other places where you can learn more. There are a number of fantastic resources we point you towards and similarly to being a dev, exploring the links and documentation will help solidify your knowledge.
 
 If you never left the mini-course, after completing it, you'll be able to find your way around a computer pretty well. However, please follow the links within a lesson to dive deeper, deepen your knowledge, and enhance your developer experience.
 
@@ -88,6 +89,4 @@ Found in the top right of the repository information ![fork location](./img/read
 4. Push to the branch (`git push origin branchName`)
 5. Create a new Pull Request
 
-### Made with ♥️
-
-by [ConsenSys](https://consensys.net/).
+Made with ♥️ by [ConsenSys](https://consensys.net/).
