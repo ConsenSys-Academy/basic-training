@@ -11,7 +11,8 @@
 
 ## Built By
 
-<a href="https://github.com/Consensys-Academy/basic-training/graphs/contributors"></a>
+![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
+
 
 ## Introduction
 
