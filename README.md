@@ -9,6 +9,10 @@
 **[Course Outline](#Course-Outline)**<br>
 **[Contributions](#Contributions)**<br>
 
+## Built By
+
+<a href="https://github.com/Consensys-Academy/basic-training/graphs/contributors"></a>
+
 ## Introduction
 
 First, please give this repo a star ⭐️!
