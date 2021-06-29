@@ -40,9 +40,15 @@
     <p>Searching is so important that Google has developed their own search bar syntax you can leverage to get better results. Here are some good resources. Here are a few:</p>
 
     <h4>Quotes</h4>
-    <p>Putting search terms in quotes (<code>"like this"</code> instead of <code>like this</code>) tells Google to only return results with that exact phrase in it. This is extremely helpful if you have a good error message with some noticeable keywords. If you're not getting good results without quotes, try it with quotes to narrow the scope. Use this somewhat sparingly, though, as if you have too many quoted terms, Google will not deliver only a few results.</p>
+    <p>Putting search terms in quotes (<code>"like this"</code> instead of <code>like this</code>) tells Google to only return results with that exact phrase in it. This is extremely helpful if you have a good error message with some noticeable keywords. If you're not getting good results without quotes, try it with quotes to narrow the scope. 
+      
+    <p>Use this feature somewhat selectively, though. The more specific your search, the fewer results you'll get!</p>
 
-    <h4><code>Site:</code></h4>
+    <div class="img-wrapper">
+      <img src="../../img/google-search-quotes.png" alt="">
+    </div>
+
+    <h4><code>site:</code></h4>
 
     <p>You can harness the algorithmic power of Google to execute a search within a single domain. This is best used if the website does not have a good internal search engine or there are multiple subdomains within a specific site.</p>
     
@@ -50,33 +56,61 @@
 
     <code>site:NYTimes.com SEARCH TERMS HERE</code>
 
-    <p>An example of wanting to search a site with multiple subdomains is <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Reddit.</a> Let's say you have a question about command line and you're not sure what Subreddit it's in. You can use the <code>site:</code> term to Google:</p>
+    <div class="img-wrapper">
+      <img src="../../img/google-search-site-nyt.png" alt="screenshot of google search using site: search parameter">
+    </div>
+
+    <p>An example of wanting to search a site with multiple subdomains is <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">Reddit.</a> Let's say you want to get a nice collection of cute animal memes but you're not sure which <a href="https://www.dictionary.com/e/slang/subreddit/" target="_blank" rel="noopener noreferrer">subreddit</a> to search. You can use the <code>site:</code> term to Google:</p>
 
     <code>site:reddit.com SEARCH TERMS HERE</code>
 
+    <div class="img-wrapper">
+      <img src="../../img/google-search-site-reddit.png" alt="screenshot of google search using site: search parameter">
+    </div>
+
     <p>Please note that you do <b>not</b> put a space between <code>site:</code> and the domain. <code>site:reddit.com</code> will work but <code>site: reddit.com</code> will not! </p>
 
-    <h4>Search Operators: <code>* | - ..</code></h4>
+    <h4>Search Operators: <code>* | - before: after:</code></h4>
 
     <p>Google also recognizes <a href="https://en.wikipedia.org/wiki/Operator_(computer_programming)" target="_blank" rel="noopener noreferrer">operators,</a> symbols common to programming languages.</p>
 
     <p>The <a href="https://www.googleguide.com/wildcard_operator.html" target="_blank" rel="noopener noreferrer">asterisk <code>*</code></a> functions as a "wildcard" operator. This is useful for when you can't remember an entire phrase or a specific word. Subsitute what you can't remember in a phrase with the <code>*</code>.</p>
 
+    <div class="img-wrapper">
+      <img src="../../img/google-search-wildcard.png" alt="screenshot of google search using wildcard search operator">
+    </div>
+
     <p>The <code>OR</code> operator, also known as the pipe <code>|</code>, asks Google to return searchs related to at least one of the search terms. It's similar to combining two separate searches: <code>(python OR blockchain) free course</code></p>
 
-    <p>The minus operator <code>-</code> can be used to <i>exclude</i> a term from your search results. Let's say you want to know about certain programming resources but not for Rust, you could search for something like: <code>programming tips -rust</code>.</p>
+    <div class="img-wrapper">
+      <img src="../../img/google-search-or.png" alt="screenshot of google search using OR operator">
+    </div>
 
-    <p>The range operator <code>..</code> allows you to search within a range of numbers. This can be dates or prices, for example. To search for financial tutorials from a certain date range, you can search <code>financial tutorials 2010..2015</code>. </p>
+    <p>The minus operator <code>-</code> can be used to <i>exclude</i> a term from your search results. Let's say you want to know about a certain term but no Wikipedia results, you could search for something like:</p>
 
-    <p>These are a few to start with, here are some more resources:</p>
+    <div class="img-wrapper">
+      <img src="../../img/google-search-minus-1.png" alt="screenshot of google search without minus operator">
+    </div>
+    <div class="img-wrapper">
+      <img src="../../img/google-search-minus-2.png" alt="screenshot of google search with minus operator">
+    </div>
+
+    <p>The range operators <code>before:</code> and <code>after:</code> allow you to search within a date range. To search for financial tutorials from a certain date range, you can search <code>financial tutorials after:2010 before:2015</code>. </p>
+
+    <div class="img-wrapper">
+      <img src="../../img/google-search-range.png" alt="screenshot of google search with range operator">
+    </div>
+
+    <p>Those are a few to start with, here are some more resources:</p>
     <ul>
       <li><a href="https://denic.hashnode.dev/use-google-like-a-pro" target="_blank" rel="noopener noreferrer">Article: Use Google Like a Pro</a></li>
       <li><a href="http://www.googleguide.com/" target="_blank" rel="noopener noreferrer">Guide: GoogleGuide.com.</a> (dated but comprehensive)</li>
       <li><a href="https://twitter.com/Insharamin/status/1406867038241398785" target="_blank" rel="noopener noreferrer">Thread: Use Google Like a Pro</a></li>
       <li><a href="https://support.google.com/websearch/answer/2466433?hl=en" target="_blank" rel="noopener noreferrer">Google Support: Refine Web Searches</a></li>
+      <li><a href="https://www.oreilly.com/library/view/google-power-search/9781449311940/" target="_blank" rel="noopener noreferrer">Book: Google Power Search (O'Reilly)</a></li>
     </ul>
 
-    <p>Now that you've learned some basic search techniques, let's walk through the thought process when trying to solve a programming error message.</p>
+    <p>Now that you've learned some basic search techniques, let's walk through the thought process when trying to solve a programming error message on our own.</p>
 
     <h3>The error message is your friend</h3>
     <p>When you hit a snag, almost always you'll get an error message. The error message is your ticket to success. Sometimes you can get an answer just pasting an error message into a search engine.</p>
@@ -87,7 +121,7 @@
 
     <p>This error has occurred because there is no port specified in the configuration file (don't worry if none of those words make sense). We don't know that yet, all we know is we have an error message.</p>
 
-    <p>The first line of error says, <pre>Something went wrong while attempting to connect to the network. Check your network configuration.</pre> First, we want to remove generic terms. This will help narrow the search. Let's remove <pre>Something went wrong while</pre> which leaves us with <pre>attempting to connect to the network. Check your network configuration.</pre> Let's stick with the last sentence <pre>Check your network configuration</pre>, as it's something we're being asked to check.</p>
+    <p>The first line of error says: <code>Something went wrong while attempting to connect to the network. Check your network configuration.</code> First, we want to remove generic terms. This will help narrow the search. Let's remove <code>Something went wrong while</code> which leaves us with <code>attempting to connect to the network. Check your network configuration.</code> Let's stick with the last sentence <code>Check your network configuration</code>, as it's something we're being asked to check. You could also put this error message in quotes for Google so we get an exact match. However, this is probably not necessary for our first search. (If the first search still didn't give us good results, we could try again with quotes.)</p>
 
     <p>Second, we're going to want to add to our search whatever piece of software or library we're using, to further narrow down our problem. So our search is <code>Truffle check your network configuration</code>.</p> Here's my results page:
 
@@ -106,15 +140,16 @@
     <p>Most despairingly, typically solving one problem will lead to another problem surfacing. Take a deep breath and repeat the process on <i>that</i> problem. But be sure to remember the issues as they arise. The knowledge you gain from solving one problem on a project stands to benefit any future problems.</p>
 
 
-    <h4>Stack Overflow</h4>
+    <h4>A Note About Stack Overflow</h4>
 
     <p>The generous and benevolent gods of the internet have given software developers a great gift. That is the elitist, snarky but nonetheless extremely smart community on the website Stack Overflow (sometimes abbreviated SO).</p>
 
-    <p>A lot of journeys of software troubleshooting will end at Stack Overflow, but sometimes it might even be helpful to start your search within Stack Overflow itself. Regardless, you will become very familiar with this site.</p>
+    <p>A lot of journeys of software troubleshooting will end at Stack Overflow, but sometimes it might even be helpful to start your search within Stack Overflow itself using the <code>site:stackoverflow.com</code> parameter. Regardless, you will become very familiar with this site. (Note that it can be difficult for new users to ask or answer a question on the site, but a lot of historical posts are still helpful.) </p>
+
+
+    <h1>How to Ask Someone For Help</h1>
 
     <p>At times, all the searching in the world doesn't get you the answers you need. Sometimes you're not getting the expected behavior from your computer, but there are no error messages, just your frustrated face. At that point, you need to ask someone for help. We'll show you the best way to do that in the context of programming.</p>
-
-    <h3>How to Ask Someone For Help</h3>
 
     <p>The first thing to know about how to ask someone for help is <i>when</i> to ask someone for help. If you're totally lost, absolutely reach out for help. However, you should take some time and basic effort of deducing the problem on your own before coming to someone else for help. We do this for two reasons: First, you want to be respectful of people's time. You should follow the steps above to search around on the internet, then you can let the person know what you've found. Second, if you haven't done the basic Googling, that's exactly what the person you're reaching out to is going to do. Many people believe mentors or instructors wouldn't stoop to use a search engine but, spoiler alert, it's one of the most powerful tools. So rather than feeling dependent on someone else to do something well within your capacity, you should empower yourself to do the basic sleuthing first.</p>
 
