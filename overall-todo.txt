@@ -1,5 +1,5 @@
 --remove no trace mentions from all <a> links
---add content to "how to access your command line" in M3/L1
+--add content to "how to access your command line" in M3-command-line/L1
 --need to check date when your tutorial was made 
 --brew install figlet for ascii art
 
