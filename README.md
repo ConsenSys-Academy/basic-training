@@ -1,5 +1,9 @@
 # Basic Training
 
+Built with :heart: by [ConsenSys](www.consensys.net/) and
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
+
 ### Table of Contents
 
 **[Introduction](#Introduction)**<br>
@@ -8,6 +12,9 @@
 **[Tool Bag](#Tool-Bag)**<br>
 **[Course Outline](#Course-Outline)**<br>
 **[Contributions](#Contributions)**<br>
+
+
+
 
 ## Introduction
 
