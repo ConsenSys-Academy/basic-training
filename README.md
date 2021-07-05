@@ -1,6 +1,6 @@
 # Basic Training
 
-Built with :heart: by [ConsenSys](www.consensys.net/) and
+Built with :heart:
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
 
