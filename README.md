@@ -9,7 +9,7 @@
 **[Course Outline](#Course-Outline)**<br>
 **[Contributions](#Contributions)**<br>
 
-## Built By
+## Built with :heart: by [ConsenSys](www.consensys.net/) and:
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
 
