@@ -1,6 +1,6 @@
 # Basic Training
 
-Built with :heart:
+Built with ♥️ by [ConsenSys](https://consensys.net/) and these fine folks (PRs welcome!)
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
 
@@ -95,5 +95,3 @@ Found in the top right of the repository information ![fork location](./img/read
 3. Commit your changes (`git commit -m 'Added X input'`)
 4. Push to the branch (`git push origin branchName`)
 5. Create a new Pull Request
-
-Made with ♥️ by [ConsenSys](https://consensys.net/).
