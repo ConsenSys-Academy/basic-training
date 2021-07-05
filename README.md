@@ -1,9 +1,5 @@
 # Basic Training
 
-Built by [ConsenSys](www.consensys.net/) and
-
-![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
-
 ### Table of Contents
 
 **[Introduction](#Introduction)**<br>
@@ -96,4 +92,7 @@ Found in the top right of the repository information ![fork location](./img/read
 4. Push to the branch (`git push origin branchName`)
 5. Create a new Pull Request
 
-Made with ♥️ by [ConsenSys](https://consensys.net/).
+
+Built by [ConsenSys](www.consensys.net/) and
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=ConsenSys-Academy/basic-training)
