@@ -23,7 +23,7 @@ If you are interested in Ethereum development, be sure to have a look at our Dev
 
 ### Purpose
 
-<p align="center">
+<p style="align:center">
 <img src = "img/readme/codeImg.png">
 </p>
 

@@ -23,9 +23,9 @@ Between participating in hackathons and contributing open source projects, they 
 
 ## Background
 
-### Cooridination
+### Coordination
 
-We use [github issues](https://github.com/ConsenSys-Academy/basic-training) for our issue tracking and project management.
+We use [github issues](https://github.com/ConsenSys-Academy/basic-training/issues) for our issue tracking and project management.
 
 ### Overview
 
