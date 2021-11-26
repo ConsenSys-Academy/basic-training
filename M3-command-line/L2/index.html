@@ -122,7 +122,7 @@
       <p>One example of this is the <code>></code> operator, which redirects the output of a command as an argument to the second command. A common way that is used is the following:</p>
 
       <pre>
-        user@ubuntu:~ $ echo "I'm writing to a text file!" > file1.txt
+        user@ubuntu:~ $ echo "I'm writing to a text file"'!' > file1.txt
       </pre>
 
       <p>Here, we're directing the output of the <code>echo</code> command (the text argument we passed in) into the file <code>file1.txt</code>. We don't have to create <code>file1.txt</code> beforehand, the command line will create it for us if it doesn't exist. Warning, if it does exist, it will <b>overwrite</b> existing content. Test to see you've successfully written to <code>file1.txt</code> by running:</p>
